@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Olga Ismailova](https://up.htmlacademy.ru/adaptive/20/user/1394731).
-* Наставник: `Анастасия Полозова`.
+* Наставник: `Анастасия Полозова`(https://htmlacademy.ru/profile/id258631).
 
 ---
 
