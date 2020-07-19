@@ -6,32 +6,33 @@
    <link href="" rel="stylesheet">
    <link href="" rel="stylesheet">
  </head>
- <body class="page__body">
+ <body>
     <header class="page-header">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img src="https://via.placeholder.com/150x150" width="" height="" alt="">  
         </a> 
-      <div class="main-nav__wrapper">  
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"> 
              <span class="visually-hidden">          
                  Открыть меню
              </span>
           </button>
-          <ul class="main-nav__list site-list">
+          <div class="main-nav__wrapper">  
+           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-                <a>
-                  Главная
-                </a>
+              <a href="index.html">
+                 Главная
+              </a>
             </li>
             <li class="site-list__item">
-                <a href="photo.html">
-                  Фотографии
-                </a>
+              <a href="photo.html">
+                 Фотографии
+              </a>
             </li>
             <li class="site-list__item">
-                <a href="form.html">
-                  Конкурc</a>
+               <a href="form.html">
+                  Конкурc
+               </a>
             </li>
             <li class="site-list__item">
                 <a href="https://htmlacademy.ru/">
@@ -39,7 +40,7 @@
                 </a>
             </li>
           </ul>
-        <div>
+        </div>
        </nav>
         <p class="page-header__slogan"> 
           Фотографии пользователей  
@@ -47,18 +48,18 @@
      </header>
      <main class="page-main">
         <section class="gallery">
-            <div class="gallery__heading--wrapper">
+            <div class="gallery__wrapper">
                 <p class="gallery__heading">
                     Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
                 </p>
             </div> 
             <div class="gallery__list">
-             <blockquote class="gallery__item">
+             <div class="gallery__item">
                  <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
                  <div class="gallery__author-info">
-                     <cite class="gallery__author-name">
+                     <p class="gallery__author-name">
                        Анна
-                     </cite>
+                     </p>
                      <span class="gallery__time-update">
                       (5 минут назад)
                      </span>    
@@ -69,13 +70,13 @@
                        Нравится: 215
                      </span>
                  </div>
-             </blockquote> 
-             <blockquote class="gallery__item">
+                </div> 
+             <div class="gallery__item">
                 <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
                 <div class="gallery__author-info">
-                    <cite class="gallery__author-name">
+                    <p class="gallery__author-name">
                       Левон
-                    </cite>
+                    </p>
                     <span class="gallery__time-update">
                       5 часов назад
                     </span>    
@@ -86,13 +87,13 @@
                       Нравится: 356  
                     </span>
                 </div>
-            </blockquote>  
-            <blockquote class="gallery__item">
+              </div>  
+            <div class="gallery__item">
                 <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
                 <div class="gallery__author-info">
-                    <cite class="gallery__author-name">
+                    <p class="gallery__author-name">
                       Антон
-                    </cite>
+                    </p>
                     <span class="gallery__time-update">
                       (12 часов назад)
                     </span>    
@@ -103,13 +104,13 @@
                       Нравится: 666
                     </span>
                 </div>
-            </blockquote>  
-            <blockquote class="gallery__item">
-                <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
+              </div>  
+            <div class="gallery__item">
+               <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
                 <div class="gallery__author-info">
-                    <cite class="gallery__author-name">
+                    <p class="gallery__author-name">
                      Борис
-                    </cite>
+                    </p>
                     <span class="gallery__time-update">
                      (20 часов назад)
                     </span>    
@@ -120,13 +121,13 @@
                      Нравится: 215
                     </span>
                 </div>
-            </blockquote>  
-            <blockquote class="gallery__item">
+              </div>  
+            <div class="gallery__item">
                 <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
                 <div class="gallery__author-info">
-                    <cite class="gallery__author-name">
+                    <p class="gallery__author-name">
                       Сергей
-                    </cite>
+                    </p>
                     <span class="gallery__time-update">
                       (25 часов назад)
                     </span>    
@@ -137,13 +138,13 @@
                       Нравится: 4
                     </span>
                 </div>
-            </blockquote>  
-            <blockquote class="gallery__item">
+              </div>  
+            <div class="gallery__item">
                 <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
                 <div class="gallery__author-info">
-                    <cite class="gallery__author-name">
+                    <p class="gallery__author-name">
                       Максим
-                    </cite>
+                    </p>
                     <span class="gallery__time-update">
                       (40 часов назад)
                     </span>    
@@ -154,13 +155,13 @@
                       Нравится: 150
                     </span>
                 </div>
-            </blockquote>  
-            <blockquote class="gallery__item">
+              </div>  
+            <div class="gallery__item">
                 <img class="gallery__pic" src="https://via.placeholder.com/150x150" width="" height="" alt="">
                 <div class="gallery__author-info">
-                    <cite class="gallery__author-name">
+                    <p class="gallery__author-name">
                       Надежда
-                    </cite>
+                    </p>
                     <span class="gallery__time-update">
                       (45 часов назад)
                     </span>    
@@ -171,7 +172,7 @@
                       Нравится: 2560
                     </span>
                 </div>
-            </blockquote> 
+              </div> 
           </div>  
         </section>
      </main>
@@ -195,8 +196,6 @@
               Разработано
           </span>
           <a class="copyright__link">
-            <svg> 
-            </svg>
           </a>        
         </div>
     </footer>        
