@@ -1,0 +1,15 @@
+.social__link {
+    text-decoration: none;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    background: $white;
+}
+
