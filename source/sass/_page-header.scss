@@ -1,0 +1,40 @@
+.page-header {
+    background-color: $dark;
+
+    &__slogan {
+      color: $white;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 120%;
+    }
+}
+
+.main-nav {
+    font: $font-stack;
+    color: $white;
+    text-transform: uppercase;
+    
+    &__list {
+      @include list();
+      font-size: 18px;
+      line-height: 32px; 
+    }
+      
+}
+
+.site-list__link {
+    color: $white;
+    text-decoration: none;
+}
+
+.bg-index-mobile {
+    background-image: url('../img/iphone-hand-mobile@1x.png'),
+                      url('../img/bg-back-mobile@1x.jpg');
+    background-repeat: no-repeat;
+                        
+} 
+
+.bg-mobile {
+    background-image: url('../img/bg-back-mobile@1x.jpg');
+    background-repeat: no-repeat;
+}
