@@ -1,0 +1,44 @@
+.form {
+   font-size: 18px;
+   line-height: 30px;
+
+    &__input {
+        font-size: 18px;
+        line-height: 30px;
+        border: 2px solid $light;
+        border-radius: 1px;   
+    }
+
+    &__button {
+        text-transform: uppercase;
+        color: $white;
+        border: 2px solid $green;
+        border-radius: 1px;
+        background-color: $green;
+    }
+
+    &__info {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+
+.achievements__list {
+   border: none;
+   background-color: $light-bg;
+}
+
+.app__list {
+   border: none; 
+}
+
+.highlight {
+    font-size: 14px;
+    line-height: 18px;
+    color: $pink;
+    text-transform: uppercase;
+}
+
+.trip-review__content {
+    resize: none;
+}
