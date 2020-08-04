@@ -58,14 +58,14 @@
            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! 
          </p>
          <form class="form" action="https://echo.htmlacademy.ru" method="get">
-           <label for="surname">Фамилия:</label>
+           <label class="highlight" for="surname">Фамилия:</label>
             <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-           <label for="name">Имя:</label>
+           <label class="highlight" for="name">Имя:</label>
             <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-           <label for="second-name">Отчество:</label>
+           <label class="highlight" for="second-name">Отчество:</label>
             <input class="form__input" type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
           <fieldset class="achievements__list">
-           <legend class="achievements__heading">
+           <legend class="achievements__heading highlight">
             Ваши безбашенные достижения в путешествии
            </legend> 
            <label for="option1">Сделал селфи с акулой</label>
@@ -81,12 +81,12 @@
            <label for="option6">Разгромил отель</label>
             <input type="checkbox" name="option6" id="option6">
           </fieldset>
-           <label for="phone">Номер телефона</label>
-            <input type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-           <label for="email">Адрес почты</label> 
-            <input type="email" name="email" id="email" placeholder="Введите почту*" required>
+           <label class="highlight" for="phone">Номер телефона</label>
+            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+           <label class="highlight" for="email">Адрес почты</label> 
+            <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту*" required>
             <fieldset class="app__list">
-              <legend class="app__heading">С каким приложением путешествовали?</legend>
+              <legend class="app__heading highlight">С каким приложением путешествовали?</legend>
                <label for="ios">Pink для iOS</label>
                 <input type="radio" name="app" id="ios" value="iOS">
                <label for="android">Pink для Android</label>
@@ -95,13 +95,13 @@
                 <input type="radio" name="app" id="windows" value="windows phone"> 
             </fieldset>
             <div class="trip-review__wrapper">  
-             <p class="trip-review__heading">Опишите свои эмоции</p>
-             <textarea class="trip-review__content" rows="5" name="trip-review" placeholder="Можно прям в красках, не стесняясь в выражениях">
+             <p class="trip-review__heading highlight">Опишите свои эмоции</p>
+             <textarea class="trip-review__content form__input" rows="5" name="trip-review" placeholder="Можно прям в красках, не стесняясь в выражениях">
              </textarea>
             </div>
-            <input type="submit" value="Отправить форму">
+            <input class="form__button" type="submit" value="Отправить форму">
             <span class="form__info">
-              * — обязательные поля 
+             <span class="highlight">*</span> — обязательные поля 
             </span>  
          </form>
        </section>  
