@@ -52,6 +52,10 @@ $desktop-width: 1200px;
     grid-template-rows: min-content 1fr min-content;
 }
 
+body {
+    margin: 0;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);

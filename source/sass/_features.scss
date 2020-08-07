@@ -1,7 +1,7 @@
 .features {
     font-family: "OpenSans", "Arial", sans-serif;
-    background-image: url('../img/iphone-screen-mobile@1x.png');
-    background-repeat: no-repeat;
+    /*background-image: url('../img/iphone-screen-mobile@1x.png');
+    background-repeat: no-repeat; */
    
     &__description_wrapper {
         background-color: $white;
@@ -65,7 +65,7 @@
             column-gap: 90px;
             align-self: center;
             justify-self: center;
-            padding: 0 154px;
+            /*padding: 0 154px;*/
         }
     }
 
@@ -76,6 +76,23 @@
 }
 
 .features {
+    
+    &__wrapper {
+
+        @media (min-width: $mobile-width) {
+
+        }
+
+        @media (min-width: $tablet-width) {
+           width: 620px; 
+           margin: 0 auto;
+        }
+
+        @media (min-width: $desktop-width) {
+           width: 890px; 
+           margin: 0 auto;
+        }
+    }
     
     &__definition {
       color: $black;
