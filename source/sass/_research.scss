@@ -1,0 +1,61 @@
+.research {
+
+    font-family: "OpenSans", "Arial", sans-serif;
+
+    @media (min-width: $mobile-width) {
+        display: none;
+    }
+    
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
+   
+    &__wrapper {
+                     
+        @media (min-width: $tablet-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        @media (min-width: $desktop-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }  
+
+    }
+
+    &__heading {
+        font-size: 30px;
+        font-weight: bold;
+        color: $black;
+        margin: 0;
+        
+        @media (min-width: $tablet-width) {
+          line-height: 36px;
+        }
+
+        @media (min-width: $desktop-width) {
+          line-height: 30px; 
+        }
+    }
+
+    &__link {
+        color: $pink;
+
+        @media (min-width: $tablet-width) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        @media (min-width: $desktop-width) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}

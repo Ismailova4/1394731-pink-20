@@ -1,18 +1,104 @@
 .features {
-    font-size: 14px;
-    line-height: 24px;
+    font-family: "OpenSans", "Arial", sans-serif;
     background-image: url('../img/iphone-screen-mobile@1x.png');
     background-repeat: no-repeat;
+   
+    &__description_wrapper {
+        background-color: $white;
+        font-weight: 300;
+
+
+        @media (min-width: $mobile-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        @media (min-width: $tablet-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            line-height: 54px;
+        }
+
+        @media (min-width: $desktop-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            line-height: 68px;
+        }
+        
+    }
 
     &__description_item {
-        font-size: 24px;
-        line-height: 120%;
+        margin: 0;
+    }
+
+    &__list {
+        background-color: $light-bg;
+
+        @media (min-width: $mobile-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (min-width: $tablet-width) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: center;
+        }
+
+        @media (min-width: $desktop-width) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 90px;
+            align-self: center;
+            justify-self: center;
+            padding: 0 154px;
+        }
+    }
+
+    &__item {
+        align-self: center;
+        justify-self: center;
     }
 }
 
-.features__definition {
-    color: $black;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;   
+.features {
+    
+    &__definition {
+      color: $black;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;   
+   
+    @media (min-width: $desktop-width) {
+      font-size: 30px;
+      line-height: 30px;   
+      text-align: center;
+     }
+   }
+
+   &__content {
+      font-size: 14px;
+      line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+    }
+   }
+
 }
