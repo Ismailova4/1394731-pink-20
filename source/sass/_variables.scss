@@ -1,11 +1,18 @@
-$font-stack: "Open Sans", sans-serif;
+/*$font-stack: "OpenSans", sans-serif;*/
 $dark: #283645;
 $dark-blue: #1d2631;
 $white: #ffffff;
 $black: #000000;
 $dark-font-color: #252527;
 $light-bg:#f2f2f2;
-$pink: #D22856;
+$pink: #d22856;
+$green: #2aab6d;
+$light: rgba(40, 54, 69, 0.1);
+$header-color: rgba(0, 0, 0, 0.3);
+
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
 
 @mixin list() {
     list-style: none;
@@ -14,7 +21,7 @@ $pink: #D22856;
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/opensanslight.woff2") format("woff2"),
@@ -22,7 +29,7 @@ $pink: #D22856;
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/opensans.woff2") format("woff2"),
@@ -30,16 +37,23 @@ $pink: #D22856;
 }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/opensansbold.woff2") format("woff2"), 
          url("../fonts/opensansbold.woff") format("woff");
 }
 
-body {
-    font: $font-stack;
+.page-body {
+    font: "OpenSans", "Arial", sans-serif;
     color: $dark;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+body {
+    margin: 0;
 }
 
 .visually-hidden {

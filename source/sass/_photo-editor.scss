@@ -1,0 +1,34 @@
+.photo-editor {
+  font-family: "OpenSans", "Arial", sans-serif;
+  background-color: $light-bg;   
+
+    &__tools_list {
+        @include list();
+    }
+
+    &__button {
+        font-size: 18px;
+        line-height: 18px;
+        cursor: pointer;
+       
+        &_post {
+          font-size: 18px;
+          line-height: 18px;
+          cursor: pointer;  
+          color: $pink;
+          border: 3px solid $pink;
+          box-sizing: border-box;
+          border-radius: 30px;
+        }
+
+        &_cancel {
+          font-size: 18px;
+          line-height: 18px;
+          cursor: pointer;  
+          color: $light;
+          border: 3px solid $light;
+          box-sizing: border-box;
+          border-radius: 30px;
+        }
+    }
+}

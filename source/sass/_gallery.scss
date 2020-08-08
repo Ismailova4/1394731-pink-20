@@ -1,8 +1,32 @@
 .gallery {
+    font-family: "OpenSans", "Arial", sans-serif;
     font-size: 14px;
 
     &__heading {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         line-height: 30px;
+
+        @media (min-width: $mobile-width) {
+            font-size: 14px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 18px;
+        }
+
+        @media (min-width: $desktop-width) {
+            font-size: 18px;
+        }
+    }
+    
+    &__author-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__text {
@@ -26,5 +50,25 @@
         line-height: 24px;
         color: $pink;
         text-transform: uppercase;
+    }
+
+    &__pic_wrapper {
+
+        @media (min-width: $mobile-width) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        @media (min-width: $tablet-width) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: $desktop-width) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }

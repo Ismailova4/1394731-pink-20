@@ -1,23 +1,113 @@
 .page-header {
-    background-color: $dark;
+    background-color: $header-color;
 
-    &__slogan {
-      color: $white;
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 120%;
+     @media (min-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+     @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }  
+   
+    &__logo-link {
+      text-decoration: none; 
+            
+    }
+
+    &__logo_wrapper {
+        
+        @media (min-width: $mobile-width) {
+         display: flex;
+         justify-content: space-between;
+        }
+
+        @media (min-width: $tablet-width) {
+         display: flex;
+         justify-content: space-between;
+         width: 620px;
+        }
+        
+    }
+
+    &__logo {
+
+        @media (min-width: $mobile-width) {
+         height: 66px;
+        }
+  
+        @media (min-width: $tablet-width) {
+         height: 110px;
+        }
+  
+        @media (min-width: $desktop-width) {
+          height: 110px;
+       }
     }
 }
 
 .main-nav {
-    font: $font-stack;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: bold;
     color: $white;
     text-transform: uppercase;
     
+    &__wrapper {
+        
+        @media (min-width: $tablet-width) {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 620px;
+         margin: 0 auto;   
+        }
+
+        @media (min-width: $desktop-width) {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 920px;
+         margin: 0 auto;
+        }
+    }
+
     &__list {
       @include list();
       font-size: 18px;
       line-height: 32px; 
+
+      @media (min-width: $tablet-width) {
+        display: none;  
+      }
+      
+      @media (min-width: $desktop-width) {
+        width: 620px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+     
+    &__toggle {
+       
+        @media (min-width: $mobile-width)  {
+           display: block;
+        } 
+       
+        @media (min-width: $tablet-width)  {
+           display: block;
+        }
+
+       @media (min-width: $desktop-width)  {
+           display: none;
+       }
     }
       
 }
@@ -25,9 +115,10 @@
 .site-list__link {
     color: $white;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.bg-index-mobile {
+/*.bg-index-mobile {
     background-image: url('../img/iphone-hand-mobile@1x.png'),
                       url('../img/bg-back-mobile@1x.jpg');
     background-repeat: no-repeat;
@@ -37,4 +128,4 @@
 .bg-mobile {
     background-image: url('../img/bg-back-mobile@1x.jpg');
     background-repeat: no-repeat;
-}
+} */

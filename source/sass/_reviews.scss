@@ -1,0 +1,19 @@
+.reviews  {
+  font-family: "OpenSans", "Arial", sans-serif;
+  line-height: 30px;
+
+    &__list {
+     @include list();
+    }
+
+    &__name {
+     font-size: 18px;
+     font-weight: bold;
+     color: $black;
+    }
+
+    &__content {
+     font-size: 14px;
+    }
+
+}
