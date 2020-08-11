@@ -1,6 +1,40 @@
 .reviews  {
   font-family: "OpenSans", "Arial", sans-serif;
   line-height: 30px;
+    
+    &__wrapper {
+
+      @media (min-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 620px;
+        min-height: 300px;
+        text-align: center;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 700px;
+        min-height: 300px;
+      }
+    }
+
 
     &__list {
      @include list();
@@ -16,4 +50,52 @@
      font-size: 14px;
     }
 
+    &__legend {
+
+      @media (min-width: $mobile-width) {
+        display: none;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+      
 }
+
+.slider__toggle {
+      
+  @media (min-width: $mobile-width) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+} 
+
+.reviews__toggles {
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60px; 
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60px; 
+  } 
+
+} 

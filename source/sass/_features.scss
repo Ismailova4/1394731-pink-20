@@ -47,8 +47,9 @@
         @media (min-width: $mobile-width) {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+            align-items: center;          
+            text-align: center;
         }
 
         @media (min-width: $tablet-width) {
@@ -80,16 +81,17 @@
     &__wrapper {
 
         @media (min-width: $mobile-width) {
-
+           max-width: 250px;
+           margin: 0 auto;
         }
 
         @media (min-width: $tablet-width) {
-           width: 620px; 
+           max-width: 620px; 
            margin: 0 auto;
         }
 
         @media (min-width: $desktop-width) {
-           width: 890px; 
+           max-width: 890px; 
            margin: 0 auto;
         }
     }

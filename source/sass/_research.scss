@@ -3,35 +3,17 @@
     font-family: "OpenSans", "Arial", sans-serif;
 
     @media (min-width: $mobile-width) {
-        display: none;
-    }
-    
-    @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+       display: none;
+    }   
 
-    @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    @media (min-width: $tablet-width) {
+        display: block;
+    }  
+
+     @media (min-width: $desktop-width) {
+        display: block;
+    }  
    
-    @media (min-width: $mobile-width) {
-
-    }
-
-    @media (min-width: $tablet-width) {
-       width: 620px; 
-       margin: 0 auto;
-    }
-
-    @media (min-width: $desktop-width) {
-       width: 890px; 
-       margin: 0 auto;
-    }
-
     &__heading {
         font-size: 30px;
         font-weight: bold;
@@ -62,14 +44,44 @@
     }
 
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
+
+        @media (min-width: $tablet-width) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          min-height: 300px;
+          width: 620px; 
+          margin: 0 auto;            
+        }
+
+        @media (min-width: $desktop-width) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          min-height: 300px;
+          width: 890px; 
+          margin: 0 auto;  
+        }
     }
 }
 
 .research__text_wrapper {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items: flex-start;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 295px;
+        max-height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 520px;
+        max-height: 200px;
+    }
 }

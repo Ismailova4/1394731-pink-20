@@ -2,6 +2,24 @@
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 14px;
 
+    &__wrapper {
+        
+        @media (min-width: $mobile-width) {
+          max-width: 320px;
+          margin: 0 auto;  
+        }
+        
+        @media (min-width: $tablet-width) {
+          max-width: 620px;
+          margin: 0 auto;  
+        }
+        
+        @media (min-width: $desktop-width) {
+          max-width: 940px;
+          margin: 0 auto;
+        }
+    }
+    
     &__heading {
 
         display: flex;
