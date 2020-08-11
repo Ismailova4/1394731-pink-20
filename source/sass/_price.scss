@@ -3,6 +3,23 @@
    line-height: 30px;
    text-transform: uppercase;
 
+    &__wrapper {
+
+    @media (min-width: $mobile-width) {
+      width: 320px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 620px;  
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 940px;
+      margin: 0 auto;  
+    }
+}
+
+
     &__heading {
         background-color: $dark;
         color: $white;
@@ -16,4 +33,5 @@
         font-size: 16px;
         font-weight: bold;
     }
+    
 }

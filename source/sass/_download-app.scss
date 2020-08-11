@@ -1,22 +1,30 @@
 .download-app {
     font-family: "OpenSans", "Arial", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: $dark-blue;
     
+    &__wrapper {
+
     @media (min-width: $mobile-width) {
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*align-items: center;*/
     }
 
     @media (min-width: $tablet-width) {
-        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        width: 620px;
     }
 
     @media (min-width: $desktop-width) {
-        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        width: 940px;
+        margin: 0 auto;             
     }
 
+   }   
     &__button {
         color: $white;
         font-family: "OpenSans", "Arial", sans-serif;
@@ -49,7 +57,7 @@
         color: $white;
         font-weight: 300;
         margin: 0;
-
+        
         @media (min-width: $mobile-width) {
           font-size: 24px;
           line-height: 120%;
@@ -58,11 +66,15 @@
         @media (min-width: $tablet-width) {
           font-size: 40px;
           line-height: 120%;
+          max-width: 185px;
+          text-align: center;
         }
 
         @media (min-width: $desktop-width) {
           font-size: 50px;
           line-height: 68px;
+          max-width: 230px;
+          text-align: center;
         }
     }
 
@@ -79,7 +91,7 @@
         font-weight: 300;
         color: $white;
         line-height: 24px;
-        text-align: center;
+        text-align: center; 
 
         @media (min-width: $mobile-width) {
             font-size: 14px;
@@ -93,5 +105,33 @@
             font-size: 18px;
         }
         
+    }
+}
+
+.download-app__content_wrapper {
+
+    @media (min-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 400px;
+        width: 300px;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        min-height: 500px;
     }
 }

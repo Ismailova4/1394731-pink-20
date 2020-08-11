@@ -1,10 +1,10 @@
 .page-header {
     background-color: $header-color;
 
-     @media (min-width: $mobile-width) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    @media (min-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
      @media (min-width: $tablet-width) {
@@ -49,21 +49,51 @@
         }
   
         @media (min-width: $desktop-width) {
-          height: 110px;
+         height: 110px;
        }
     }
 }
 
 .main-nav {
     font-family: "OpenSans", "Arial", sans-serif;
-    font-size: bold;
     color: $white;
-    text-transform: uppercase;
+
+    @media (min-width: $mobile-width) {
+       font-size: 18px;
+       font-weight: bold;
+       line-height: 32px;
+       text-transform: uppercase;
+    }
+    
+    @media (min-width: $tablet-width) {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: none;
+    }
+    
     
     &__wrapper {
         
+        @media (min-width: $mobile-width) {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         width: 280px;
+         margin: 0 auto;   
+        }
+
         @media (min-width: $tablet-width) {
          display: flex;
+         flex-direction: column;
          justify-content: space-between;
          align-items: center;
          width: 620px;
@@ -72,6 +102,7 @@
 
         @media (min-width: $desktop-width) {
          display: flex;
+         flex-direction: row;
          justify-content: space-between;
          align-items: center;
          width: 920px;
@@ -83,15 +114,32 @@
       @include list();
       font-size: 18px;
       line-height: 32px; 
+      
+      @media (min-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 255px;
+      }
 
       @media (min-width: $tablet-width) {
-        display: none;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+        min-height: 255px;
       }
       
       @media (min-width: $desktop-width) {
         width: 620px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        text-transform: normal;
+        font-weight: normal;
       }
     }
      
@@ -112,10 +160,28 @@
       
 }
 
-.site-list__link {
-    color: $white;
-    text-decoration: none;
-    cursor: pointer;
+.site-list {
+
+    &__link {
+     color: $white;
+     text-decoration: none;
+     cursor: pointer;
+    }
+
+    &__item {
+      
+        @media (min-width: $mobile-width) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            min-height: 25%;
+        }
+
+        @media (min-width: $tablet-width) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            min-height: 25%;
+        }
+    }
 }
 
 /*.bg-index-mobile {

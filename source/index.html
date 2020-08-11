@@ -10,7 +10,7 @@
  <body class="page-body">
      <header class="page-header bg-index-mobile">
       <div class="main-nav__wrapper">  
-       <div class="page-header__logo_wrapper">
+        <div class="page-header__logo_wrapper">
          <a class="page-header__logo-link" href="index.html">
           <svg class="page-header__logo" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z" fill="white"/>
@@ -23,10 +23,9 @@
           <span>          
               Открыть меню
           </span>
-        </button>
+         </button>
         </div>
         <nav class="main-nav">
-         
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
                 <a class="site-list__link">
@@ -56,6 +55,8 @@
       <h1 class="visually-hidden">Устали от серости мегаполиса?</h1>
        <section class="download-app">
         <h2 class="visually-hidden">Скачать приложение</h2>
+      <div class="download-app__wrapper"> 
+       <div class="download-app__content_wrapper">    
         <p class="download-app__slogan"> 
           Взгляните на жизнь иначе!  
         </p>     
@@ -93,9 +94,11 @@
              </a> 
            </li>
          </ul>
-         <p class="download-app__content">    
+          <p class="download-app__content">    
            Доступно для IPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8  
-         </p>    
+          </p> 
+         </div> 
+        </div>   
        </section>
        <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>   
@@ -157,17 +160,21 @@
        </section>
        <section class="reviews">
          <h2 class="visually-hidden">Отзывы</h2>
-         <ul class="reviews__list slider-list">
+         <div class="reviews__wrapper">
+          <ul class="reviews__list slider-list">
            <li class="reviews__item slider-item">
-             <span class="reviews__name">
-               Николай Петров
-             </span>
              <p class="reviews__content">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
              </p>
+             <span class="reviews__name">
+              Николай Петров
+            </span>
+             <span class="reviews__legend">
+              25 лет, водитель трамвая
+             </span>  
            </li>  
          </ul>
-         <div class="reviews_toggles slider__toggles">
+         <div class="reviews__toggles slider__toggles">
            <button class="slider__toggle slider__toggle_current" type="button">
             1
            </button>  
@@ -177,10 +184,12 @@
            <button class="slider__toggle" type="button">
             3
            </button> 
+          </div>
          </div>  
        </section>
        <section class="price">
-        <table class="price__list">
+        <div class="price__wrapper"> 
+         <table class="price__list">
           <tr class="price__heading">
             <th class="price__heading_item"></th>
             <th class="price__heading_item">
@@ -241,13 +250,16 @@
            3
           </button> 
         </div>  
+       </div> 
        </section>  
      </main>
      <footer class="page-footer-index"> 
-      <div class="page-footer-index__contacts">
+      <div class="page-footer-index__contacts_list_wrapper">   
+      
         <p class="page-footer-index__contacts_text">
           Остались вопросы? Свяжитесь с нами!
         </p>
+        
         <ul class="page-footer-index__contacts_list">
           <li class="page-footer-index__contacts_list-item">
             <p class="page-footer-index__contacts_list-heading">
@@ -274,11 +286,13 @@
             </p>
           </li>
         </ul>
+       
       </div>  
       
       <div class="page-footer-index__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1596179105467!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1596179105467!5m2!1sen!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
+
     <div class="page-footer__wrapper">
 
       <div class="page-footer__logo">
