@@ -9,6 +9,7 @@ $grey: #e5e5e5;
 $pink: #d22856;
 $green: #2aab6d;
 $light: rgba(46, 60, 75, 0.1);
+$light-border: rgba(255, 255, 255, 0.15);
 $header-color: rgba(0, 0, 0, 0.3);
 
 $mobile-width: 320px;
@@ -26,7 +27,7 @@ $desktop-width: 1200px;
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/opensanslight.woff2") format("woff2"),
-         url("../fonts/opensanslight.woff") format("woff"); 
+         url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
@@ -34,14 +35,14 @@ $desktop-width: 1200px;
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/opensans.woff2") format("woff2"),
-         url("../fonts/opensans.woff") format("woff"); 
+         url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
     font-family: "OpenSans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/opensansbold.woff2") format("woff2"), 
+    src: url("../fonts/opensansbold.woff2") format("woff2"),
          url("../fonts/opensansbold.woff") format("woff");
 }
 
@@ -64,3 +65,4 @@ body {
     height: 1px;
     margin: -1px;
   }
+
