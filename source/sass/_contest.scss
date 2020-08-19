@@ -1,5 +1,8 @@
-.contest__legend {
+.contest {
   font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.contest__legend {
 
   @media (min-width: $mobile-width) {
       display: none;
