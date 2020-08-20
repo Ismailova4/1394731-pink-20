@@ -164,13 +164,13 @@
   @media (min-width: $mobile-width) {
     display: flex;
     justify-content: space-between;
-    width: 48%;
+    width: 55%;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 22%;
+    width: 27%;
 
   }
 
@@ -187,21 +187,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 35%;
+    width: 40%;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 17%;
+    width: 20%;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 14%;
+    width: 10em;
   }
 }
 

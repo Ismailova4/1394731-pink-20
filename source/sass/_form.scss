@@ -2,110 +2,107 @@
    font-family: "OpenSans", "Arial", sans-serif;
    font-size: 18px;
    line-height: 30px;
+}
 
-    &__wrapper {
+.form__wrapper {
+  margin: 0 auto;
 
-        @media (min-width: $mobile-width) {
-          margin: 0 auto;
-          max-width: 320px;
-        }
-
-        @media (min-width: $tablet-width) {
-          display: flex;
-          flex-direction: column;
-          margin: 0 auto; 
-          max-width: 620px; 
-        }
-
-        @media (min-width: $desktop-width) {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;  
-          max-width: 940px;
-          margin: 0 auto;
-        }
+    @media (min-width: $mobile-width) {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
     }
 
-    &-name__wrapper {
-
-        @media (min-width: $mobile-width) {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          min-height: 320px;
-          margin-top: 45px;
-          margin-bottom: 45px;
-        }
-
-        @media (min-width: $tablet-width) {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          min-height: 320px;
-          margin-top: 45px;
-          margin-bottom: 45px;
-        }
-
-        @media (min-width: $desktop-width) {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: flex-start;
-          width: 440px;
-        }
+    @media (min-width: $tablet-width) {
+     display: flex;
+     flex-direction: column;
     }
 
-    &-name__item {
-
-        @media (min-width: $mobile-width) {
-          display: flex;
-          flex-direction: column; 
-          justify-content: space-between;
-          min-height: 90px; 
-        }
-
-        @media (min-width: $tablet-width) {
-          display: flex;
-          flex-direction: row; 
-          justify-content: space-between;
-          align-items: center;
-        }
+    @media (min-width: $desktop-width) {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 80%;
     }
-    
-    &-name__text {
+}
 
-        @media (min-width: $tablet-width) {
-            padding-right: 20px;
-        }
+.form-name__wrapper {
+
+    @media (min-width: $mobile-width) {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     min-height: 320px;
+
     }
 
-    &__input {
-        display: block;
-        font-size: 18px;
-        line-height: 30px;
-        border: 2px solid $light;
-        border-radius: 1px;
-        box-sizing: border-box;   
-
-        @media (min-width: $mobile-width) {
-          width: 276px;
-          height: 59px;
-        }
-
-        @media (min-width: $tablet-width) {
-          width: 521px;
-          height: 59px;   
-        }
-
-        @media (min-width: $desktop-width) {
-          width: 336px;
-          height: 59px;
-        }
+    @media (min-width: $tablet-width) {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     min-height: 320px;
     }
 
-    &__contacts_heading {
+    @media (min-width: $desktop-width) {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-start;
+     width: 440px;
+    }
+}
+
+.form-name__item {
+
+    @media (min-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 90px;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      }
+}
+
+.form-name__text {
+
+    @media (min-width: $tablet-width) {
+
+    }
+}
+
+.form__input {
+     display: block;
+     font-size: 18px;
+     line-height: 30px;
+     border: 2px solid $light;
+     border-radius: 1px;
+     box-sizing: border-box;
+
+     @media (min-width: $mobile-width) {
+       width: 276px;
+       height: 59px;
+     }
+
+     @media (min-width: $tablet-width) {
+       width: 521px;
+       height: 59px;
+     }
+
+     @media (min-width: $desktop-width) {
+       width: 336px;
+       height: 59px;
+    }
+}
+
+.form__contacts_heading {
 
         @media (min-width: $mobile-width) {
             display: none;
@@ -121,9 +118,9 @@
         @media (min-width: $desktop-width) {
             display: block;
         }
-    }
+}
 
-    &__button {
+.form__button {
         display: block;
         text-transform: uppercase;
         color: $white;
@@ -134,24 +131,23 @@
 
         @media (min-width: $mobile-width) {
            width: 276px;
-           height: 59px;  
+           height: 59px;
         }
 
         @media (min-width: $tablet-width) {
            width: 296px;
-           height: 59px;  
+           height: 59px;
         }
 
         @media (min-width: $desktop-width) {
            width: 296px;
-           height: 59px;  
+           height: 59px;
         }
     }
 
-    &__info {
-        font-size: 14px;
-        text-transform: uppercase;
-    }
+.form__info {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .name-input {
@@ -167,34 +163,28 @@
     }
 }
 
-.achievements {
-   
-   &__list {
-        
-    @media (min-width: $desktop-width) {
-        margin-top: 60px;
-        min-width: 940px;
-    }
-   }
+.achievements__list {
 
-   &__wrapper {
-     
+    @media (min-width: $desktop-width) {
+      min-width: 940px;
+    }
+
+
+.achievements__wrapper {
+
      @media (min-width: $mobile-width) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-height: 460px;
-        padding-bottom: 45px;
-        padding-top: 45px;
-     }
+    }
 
      @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-height: 460px;
-        padding-bottom: 45px;
-        padding-top: 45px;
+
      }
 
      @media (min-width: $desktop-width) {
@@ -203,19 +193,18 @@
         justify-content: space-between;
         flex-wrap: wrap;
         min-height: 230px;
-        padding-top: 0;
-        padding-bottom: 0;
+
      }
    }
-   
-   &__heading {
-     
+
+.achievements__heading {
+
      @media (min-width: $mobile-width) {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        max-width: 220px;       
+        max-width: 220px;
      }
 
      @media (min-width: $tablet-width) {
@@ -223,40 +212,40 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        max-width: 370px;       
+        max-width: 370px;
      }
 
      @media (min-width: $desktop-width) {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 370px;            
+        max-width: 370px;
      }
-   }
+}
 
-   &__item {
-     
+.achievements__item {
+
      @media (min-width: $mobile-width) {
         display: flex;
-        justify-content: flex-start;  
+        justify-content: flex-start;
         align-items: center;
      }
 
      @media (min-width: $tablet-width) {
         display: flex;
-        justify-content: flex-start;  
+        justify-content: flex-start;
         align-items: center;
      }
-     
+
    }
 
-   &__list {
+.achievements__list {
      background-color: $light-bg;
      font-size: 18px;
      line-height: 30px;
 
    @media (min-width: $mobile-width) {
-       background-color: $light-bg;   
+       background-color: $light-bg;
        border: none;
    }
 
@@ -279,7 +268,7 @@
 
     @media (min-width: $mobile-width) {
         border: none;
-       
+
     }
 
     @media (min-width: $tablet-width) {
@@ -288,7 +277,7 @@
         border-radius: 1px;
         margin-top: 60px;
     }
- 
+
     @media (min-width: $desktop-width) {
         margin-top: 60px;
         border: 2px solid $light;
@@ -301,18 +290,16 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            height: 205px;
-            padding-top: 45px;
-            padding-bottom: 45px;
+            min-height: 205px;
+
         }
 
         @media (min-width: $tablet-width) {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            height: 205px;
-            padding-top: 45px;
-            padding-bottom: 45px;
+            min-height: 205px;
+
         }
 
         @media (min-width: $desktop-width) {
@@ -320,11 +307,8 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            height: 110px;
+            min-height: 110px;
             width: 940px;
-            padding-top: 30px;
-            padding-bottom: 25px;
-           
         }
     }
 
@@ -335,7 +319,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            height: 90px;
+            min-height: 90px;
         }
 
         @media (min-width: $tablet-width) {
@@ -343,46 +327,45 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            height: 90px;
+            min-height: 90px;
           }
     }
 
 }
 
 .form__contacts_item .highlight {
-    
+
     @media (min-width: $tablet-width) {
      order: 1;
     }
 }
 
-.app {
-   &__list {
+.app__list {
    /*width: 100%;*/
 
     @media (min-width: $mobile-width) {
-       border: none; 
+       border: none;
        background-color: $light-bg;
     }
 
     @media (min-width: $tablet-width) {
-       order: 1; 
+       order: 1;
        border: 2px solid $light;
-       border-radius: 1px; 
+       border-radius: 1px;
        background-color: $white;
     }
 
     @media (min-width: $desktop-width) {
-       order: 1; 
+       order: 1;
        border: 2px solid $light;
-       border-radius: 1px; 
+       border-radius: 1px;
        background-color: $white;
        width: 440px;
-       max-height: 300px;
+       min-height: 300px;
      }
-   }
-   
-   &__wrapper {
+}
+
+.app__wrapper {
 
    @media (min-width: $mobile-width) {
        display: flex;
@@ -397,9 +380,9 @@
        justify-content: space-around;
        min-height: 200px;
     }
-  }  
+  }
 
-    &__item {
+.app__item {
 
     @media (min-width: $mobile-width) {
         display: flex;
@@ -414,7 +397,7 @@
     }
    }
 
-   &__heading {
+.app__heading {
 
     @media (min-width: $mobile-width) {
         display: flex;
@@ -423,7 +406,7 @@
         text-align: center;
         width: 180px;
     }
-   }
+
 }
 
 .highlight {
@@ -433,10 +416,8 @@
     text-transform: uppercase;
 }
 
-.trip-review {
-   
-   &__wrapper {
-     
+.trip-review__wrapper {
+
     @media (min-width: $mobile-width) {
        display: flex;
        flex-direction: column;
@@ -444,13 +425,13 @@
        align-items: center;
        height: 465px;
     }
-    
+
     @media (min-width: $tablet-width) {
        display: flex;
        flex-direction: column;
        justify-content: space-around;
        align-items: center;
-       order: 4; 
+       order: 4;
     }
 
     @media (min-width: $desktop-width) {
@@ -461,10 +442,9 @@
        order: 4;
        width: 940px;
     }
+}
 
-   }
-   
-   &__item {
+.trip-review__item {
 
      @media (min-width: $mobile-width) {
         display: flex;
@@ -492,9 +472,9 @@
         border-radius: 1px;
         margin-top: 60px;
     }
-   }
+}
 
-   &__content {
+ .trip-review__content {
     display: block;
     box-sizing: border-box;
     resize: none;
@@ -515,7 +495,7 @@
     }
    }
 
-   &__button {
+.trip-review__button {
 
       @media (min-width: $mobile-width) {
           display: flex;
@@ -530,26 +510,25 @@
           justify-content: space-between;
           align-items: center;
           width: 620px;
-        
-    }
-      
+      }
+
        @media (min-width: $desktop-width) {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          width: 940px;   
+          width: 940px;
        }
-   }
+}
 
-   &__heading {
+ .trip-review__heading {
 
       @media (min-width: $mobile-width) {
           text-align: center;
       }
    }
 
-}
+
 
 .input-tel,
 .input-email {
