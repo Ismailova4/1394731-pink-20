@@ -1,137 +1,207 @@
 .download-app {
     font-family: "OpenSans", "Arial", sans-serif;
+    position: relative;
+    z-index: 1;
     background-color: $dark-blue;
-    
-    &__wrapper {
 
     @media (min-width: $mobile-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /*align-items: center;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      min-height: 735px;
+      background-color: $dark;
+      background-image: url("../img/iphone-hand-mobile@1x.png"),
+                        url("../img/bg-back-mobile@1x.jpg");
+      background-position: 0% 39%, 0% 0%;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto,
+                       auto 462px;
     }
 
     @media (min-width: $tablet-width) {
-        display: flex;
-        justify-content: flex-start;
-        width: 620px;
+      min-height: 729px;
+      background-color: $dark;
+      background-image: url("../img/iphone-hand-tablet@1x.png"),
+                        url("../img/bg-back-tablet@1x.jpg");
+      background-position: 60% 100%, 50% 50%;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 720px 550px,
+                       auto 730px;
     }
 
     @media (min-width: $desktop-width) {
-        display: flex;
-        justify-content: flex-start;
-        width: 940px;
-        margin: 0 auto;             
+      min-height: 850px;
+      background-color: $dark;
+      background-image: url("../img/iphone-hand-desktop@1x.png"),
+                        url("../img/bg-back-desktop@1x.jpg");
+      background-position: 60% 100%, 54% 50%;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 1000px 640px,
+                       cover;
     }
+  }
 
-   }   
-    &__button {
-        color: $white;
-        font-family: "OpenSans", "Arial", sans-serif;
-        font-weight: bold;
-        line-height: 18px;
-        border: 3px solid $white;
-        box-sizing: border-box;
-        border-radius: 29px;
-        background-color: transparent;
-        cursor: pointer;
+.download-app__wrapper {
+  width: 90%;
+  margin: 0 auto;
 
-        @media (min-width: $mobile-width) {
-            font-size: 18px;
-            padding: 21px 39px 21px 38px;
-        }
+  @media (min-width: $mobile-width) {
+    position: relative;
+    top: 30px;
+  }
 
-        @media (min-width: $tablet-width) {
-            font-size: 18px;
-            padding: 21px 49px 21px 48px;
-        }
-
-        @media (min-width: $desktop-width) {
-            font-size: 21px;
-            padding: 21px 49px 21px 48px;
-        }
-    }
-
-    &__slogan {
-        font-family: "OpenSans", "Arial", sans-serif;
-        color: $white;
-        font-weight: 300;
-        margin: 0;
-        
-        @media (min-width: $mobile-width) {
-          font-size: 24px;
-          line-height: 120%;
-        }
-
-        @media (min-width: $tablet-width) {
-          font-size: 40px;
-          line-height: 120%;
-          max-width: 185px;
-          text-align: center;
-        }
-
-        @media (min-width: $desktop-width) {
-          font-size: 50px;
-          line-height: 68px;
-          max-width: 230px;
-          text-align: center;
-        }
-    }
-
-    &__list {
-        @include list();
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        width: 205px;
-        
-    }
-
-    &__content {
-        font-weight: 300;
-        color: $white;
-        line-height: 24px;
-        text-align: center; 
-
-        @media (min-width: $mobile-width) {
-            font-size: 14px;
-        }
-        
-        @media (min-width: $tablet-width) {
-            font-size: 18px;
-        }
-
-        @media (min-width: $desktop-width) {
-            font-size: 18px;
-        }
-        
-    }
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 50px;
+  }
 }
 
 .download-app__content_wrapper {
 
-    @media (min-width: $mobile-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+  @media (min-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 610px;
+  }
 
-    @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 400px;
-        width: 300px;
-    }
+  @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 48%;
+      min-height: 400px;
 
-    @media (min-width: $desktop-width) {
-        display: flex;
+     /* &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/iphone-hand-tablet@1x.png");
+        top: 50px;
+        right: 50px;
+      } */
+  }
+
+  @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 350px;
+      min-height: 500px;
+  }
+}
+
+.download-app__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 18px;
+    height: 55px;
+    border: 3px solid $white;
+    box-sizing: border-box;
+    border-radius: 29px;
+    background-color: transparent;
+    cursor: pointer;
+
+        @media (min-width: $mobile-width) {
+          width: 280px;
+          font-size: 18px;
+          padding: 18px 30px 17px 30px;
+        }
+
+        @media (min-width: $tablet-width) {
+          width: 300px;
+          font-size: 18px;
+          padding: 18px 45px 18px 45px;;
+        }
+
+        @media (min-width: $desktop-width) {
+          height: 56px;
+          font-size: 21px;
+          padding: 18px 28px 18px 28px;
+        }
+}
+
+.download-app__slogan {
+    font-family: "OpenSans", "Arial", sans-serif;
+    color: $white;
+    font-weight: 300;
+    margin: 0;
+
+      @media (min-width: $mobile-width) {
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: 40px;
+        line-height: 120%;
+        max-width: 185px;
+        text-align: center;
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: 50px;
+        line-height: 68px;
+        max-width: 230px;
+        text-align: center;
+      }
+}
+
+.download-app__list {
+    @include list();
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 205px;
+
+    &_wrapper {
+      display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
-        min-height: 500px;
+
+      @media (min-width: $mobile-width) {
+        min-height: 210px;
+      }
+
+      @media (min-width: $tablet-width) {
+        min-height: 235px;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-height: 275px;
+      }
+
     }
 }
+
+.download-app__content {
+    font-weight: 300;
+    color: $white;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+
+      @media (min-width: $mobile-width) {
+          font-size: 14px;
+      }
+
+      @media (min-width: $tablet-width) {
+          font-size: 18px;
+      }
+
+      @media (min-width: $desktop-width) {
+          font-size: 18px;
+      }
+
+}
+
+

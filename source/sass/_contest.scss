@@ -1,69 +1,67 @@
 .contest {
-
   font-family: "OpenSans", "Arial", sans-serif;
+}
 
- &__legend {
+.contest__legend {
 
-    @media (min-width: $mobile-width) {
-       display: none;
-    }
-
-    @media (min-width: $tablet-width) {
-       display: block; 
-    }
-
-    @media (min-width: $desktop-width) {
-       display: block; 
-    } 
-  }
- 
- &__intro,
- &__legend {
-           
-    line-height: 30px;
-    margin: 0;
-    
-    @media (min-width: $mobile-width) {
-        font-size: 14px;
-    }
-
-    @media (min-width: $tablet-width) {
-        font-size: 18px;
-    }
-
-    @media (min-width: $desktop-width) {
-        font-size: 18px;
-    }
+  @media (min-width: $mobile-width) {
+      display: none;
   }
 
- &__wrapper {
+  @media (min-width: $tablet-width) {
+      display: block;
+  }
 
-    margin: 0 auto;
+  @media (min-width: $desktop-width) {
+      display: block;
+  }
+}
 
-    @media (min-width: $mobile-width) {
+.contest__intro,
+.contest__legend {
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+      font-size: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+      font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+      font-size: 18px;
+  }
+}
+
+.contest__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $mobile-width) {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     align-items: center;   
+     align-items: center;
      text-align: center;
      max-width: 275px;
-    }
-    
-    @media (min-width: $tablet-width)  {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 230px;
-        max-width: 490px;
-    }
+  }
 
-    @media (min-width: $desktop-width)  {
+  @media (min-width: $tablet-width)  {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 230px;
+     max-width: 490px;
+  }
+
+  @media (min-width: $desktop-width)  {
      display: flex;
      justify-content: center;
      align-items: center;
      min-height: 230px;
      max-width: 760px;
-    }
   }
 }
+
 

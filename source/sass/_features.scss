@@ -1,123 +1,243 @@
 .features {
     font-family: "OpenSans", "Arial", sans-serif;
-    /*background-image: url('../img/iphone-screen-mobile@1x.png');
-    background-repeat: no-repeat; */
-   
-    &__description_wrapper {
-        background-color: $white;
-        font-weight: 300;
 
-
-        @media (min-width: $mobile-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 24px;
-            line-height: 29px;
-        }
-
-        @media (min-width: $tablet-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            line-height: 54px;
-        }
-
-        @media (min-width: $desktop-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 50px;
-            line-height: 68px;
-        }
-        
+    @media (min-width: $mobile-width) {
+      min-height: 1002px;
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 105%;
     }
 
-    &__description_item {
-        margin: 0;
+    @media (min-width: $tablet-width) {
+      min-height: 725px;
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 10% 125%;
+      background-size: 265px 490px;
     }
 
-    &__list {
-        background-color: $light-bg;
-
-        @media (min-width: $mobile-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;          
-            text-align: center;
-        }
-
-        @media (min-width: $tablet-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            text-align: center;
-        }
-
-        @media (min-width: $desktop-width) {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 90px;
-            align-self: center;
-            justify-self: center;
-            /*padding: 0 154px;*/
-        }
-    }
-
-    &__item {
-        align-self: center;
-        justify-self: center;
+    @media (min-width: $desktop-width) {
+      min-height: 950px;
+      background-image: url("../img/iphone-screen-1-desktop@1x.png"),
+                        url("../img/iphone-screen-2-desktop@1x.png"),
+                        url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: 13% 55%,
+                           50% 55%,
+                           87% 55%;
+      background-size: 300px 310px;
     }
 }
 
-.features {
-    
-    &__wrapper {
+.features__wrapper {
 
-        @media (min-width: $mobile-width) {
-           max-width: 250px;
-           margin: 0 auto;
-        }
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 730px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-        @media (min-width: $tablet-width) {
-           max-width: 620px; 
-           margin: 0 auto;
-        }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 725px;
+    width: 90%;
+    margin: 0 auto;
+  }
 
-        @media (min-width: $desktop-width) {
-           max-width: 890px; 
-           margin: 0 auto;
-        }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 950px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.features__description {
+
+  &_wrapper {
+  background-color: $white;
+  font-weight: 300;
+
+    @media (min-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 24px;
+      line-height: 29px;
+      min-height: 250px;
     }
-    
-    &__definition {
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      line-height: 54px;
+      min-height: 270px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      line-height: 68px;
+      min-height: 320px;
+    }
+  }
+
+    &_wrap {
+
+      @media (min-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 135px;
+      }
+    }
+
+    &_item {
+      margin: 0;
+    }
+}
+
+.features__list {
+
+    @media (min-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      min-height: 390px;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      min-height: 360px;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 205px;
+      /*display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 90px;
+      align-self: center;
+      justify-self: center; */
+    }
+
+    &_wrapper {
+     /* background-color: $light-bg;*/
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+
+      @media (min-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 390px;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        min-height: 360px;
+      }
+
+      @media (min-width: $desktop-width) {
+        justify-content: flex-end;
+        min-height: 205px;
+      }
+    }
+
+    &_wrap {
+
+    @media (min-width: $mobile-width) {
+      min-height: 390px;
+      width: 100%;
+    }
+
+    @media(min-width: $tablet-width) {
+
+      min-height: 360px;
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+
+      min-height: 205px;
+      width: 100%;
+    }
+
+    }
+}
+
+.features__item {
+    /*align-self: center;
+    justify-self: center; */
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-basis: 30%;
+      min-height: 195px;
+      text-align: center;
+    }
+}
+
+.features__definition {
       color: $black;
       font-weight: bold;
       font-size: 18px;
-      line-height: 24px;   
-   
+      line-height: 24px;
+      margin: 0;
+
     @media (min-width: $desktop-width) {
       font-size: 30px;
-      line-height: 30px;   
+      line-height: 30px;
       text-align: center;
-     }
-   }
+    }
+}
 
-   &__content {
-      font-size: 14px;
-      line-height: 24px;
+.features__content {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
 
     @media (min-width: $desktop-width) {
       font-size: 18px;
       line-height: 30px;
       text-align: center;
     }
-   }
-
 }
+
