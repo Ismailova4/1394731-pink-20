@@ -44,23 +44,24 @@
      justify-content: center;
      align-items: center;
      text-align: center;
-     max-width: 275px;
+     min-height: 170px;
+     width: 90%;
   }
 
   @media (min-width: $tablet-width)  {
      display: flex;
      justify-content: center;
      align-items: center;
-     min-height: 230px;
-     max-width: 490px;
+     min-height: 255px;
+     width: 80%;
   }
 
   @media (min-width: $desktop-width)  {
-     display: flex;
+     /*display: flex;
      justify-content: center;
-     align-items: center;
-     min-height: 230px;
-     max-width: 760px;
+     align-items: center; */
+     min-height: 215px;
+     width: 60%;
   }
 }
 

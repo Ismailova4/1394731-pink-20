@@ -15,7 +15,7 @@
        <picture>
          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-         <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+         <img class="page-header__logo_svg" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
        </picture>
       </a>
      </div>
@@ -43,7 +43,7 @@
          </li>
          <li class="site-list__item">
              <a class="site-list__link" href="https://htmlacademy.ru/">
-               HTML ACADEMY
+               Html Academy
              </a>
          </li>
        </ul>
@@ -53,7 +53,7 @@
   </header>
      <main class="page-main">
        <section class="bg">
-        <p class="bg__slogan">
+        <p class="bg__slogan_form">
           Конкурс на самое безбашенное путешествие с Пинк
         </p>
        </section>
@@ -87,34 +87,36 @@
           <legend class="achievements__heading highlight">
             Ваши безбашенные достижения в путешествии
           </legend>
-          <div class="achievements__wrapper">
+
+        <div class="achievements__wrapper">
+
           <div class="achievements__item">
-            <input type="checkbox" name="option1" id="option1">
-            <label for="option1">Сделал селфи с акулой</label>
+            <input class="achievements__checkbox" type="checkbox" name="option1" id="option1">
+            <label class="achievements__option" for="option1">Сделал селфи с акулой</label>
           </div>
 
           <div class="achievements__item">
-            <input type="checkbox" name="option2" id="option2">
+            <input class="achievements__checkbox" type="checkbox" name="option2" id="option2">
             <label for="option2">Обгорел на пляже</label>
           </div>
 
           <div class="achievements__item">
-            <input type="checkbox" name="option3" id="option3">
+            <input class="achievements__checkbox" type="checkbox" name="option3" id="option3">
             <label for="option3">Видел Чака Норриса</label>
           </div>
 
           <div class="achievements__item">
-            <input type="checkbox" name="option4" id="option4">
+            <input class="achievements__checkbox" type="checkbox" name="option4" id="option4">
             <label for="option4">Накупил сувениров</label>
           </div>
 
           <div class="achievements__item">
-            <input type="checkbox" name="option5" id="option5">
+            <input class="achievements__checkbox" type="checkbox" name="option5" id="option5">
             <label for="option5">Удержал башню</label>
           </div>
 
           <div class="achievements__item">
-            <input type="checkbox" name="option6" id="option6">
+            <input class="achievements__checkbox" type="checkbox" name="option6" id="option6">
             <label for="option6">Разгромил отель</label>
           </div>
         </div>
@@ -140,19 +142,20 @@
         </fieldset>
 
           <fieldset class="app__list">
+
               <legend class="app__heading highlight">С каким приложением путешествовали?</legend>
             <div class="app__wrapper">
               <div class="app__item">
-               <input type="radio" name="app" id="ios" value="iOS">
+               <input class="app__radio" type="radio" name="app" id="ios" value="iOS">
                 <label for="ios">Pink для iOS</label>
              </div>
              <div class="app__item">
-               <input type="radio" name="app" id="android" value="android">
+               <input class="app__radio" type="radio" name="app" id="android" value="android">
                 <label for="android">Pink для Android</label>
              </div>
              <div class="app__item">
-               <input type="radio" name="app" id="windows" value="windows phone">
-                <label for="ios">Windows phone<label>
+               <input class="app__radio" type="radio" name="app" id="windows" value="windows phone">
+                <label for="windows">Windows phone<label>
              </div>
             </div>
           </fieldset>
@@ -160,14 +163,16 @@
           <div class="trip-review__wrapper">
            <fieldset class="trip-review__item">
             <legend class="trip-review__heading highlight">Опишите свои эмоции</legend>
-            <textarea class="trip-review__content" rows="10" name="trip-review" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea class="trip-review__content" rows="13" name="trip-review" >Можно прям в красках, не стесняясь в выражениях
             </textarea>
            </fieldset>
            <div class="trip-review__button">
-            <input class="form__button button" type="submit" value="Отправить форму">
-            <span class="form__info">
-              * — обязательные поля
-            </span>
+            <div class="trip-review__button_wrapper">
+             <input class="form__button button" type="submit" value="Отправить форму">
+             <span class="form__info">
+              <span class="highlight">*</span> — обязательные поля
+             </span>
+            </div>
            </div>
           </div>
           </div>
@@ -209,34 +214,47 @@
                Разработано
            </span>
            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
-              </svg>
+            <svg class="copyright__svg-icon" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
+            </svg>
            </a>
          </div>
        </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var pageHeader = document.querySelector('.page-header__wrapper');
 
-      navMain.classList.remove('main-nav-nojs');
+    <div class="modal-error">
 
-      navToggle.addEventListener('click', function() {
+        <div class="modal-error__text_wrapper">
+         <p class="modal-error__heading">
+          Что-то пошло не так!
+         </p>
+         <p class="modal-error__content">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+         </p>
+        </div>
 
-       if (navMain.classList.contains('main-nav-closed')) {
-         navMain.classList.remove('main-nav-closed');
-         navMain.classList.add('main-nav-opened');
-         pageHeader.style.backgroundColor = '#283645';
-       }
-         else {
-           navMain.classList.add('main-nav-closed');
-           navMain.classList.remove('main-nav-opened');
-           pageHeader.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
-         }
-       }
-      );
-    </script>
+        <div class="modal-error__button_wrapper">
+          <button class="modal-error__button button" type="button">Ок</button>
+        </div>
+
+    </div>
+
+    <div class="modal-success">
+
+       <div class="modal-success__text_wrapper">
+        <p class="modal-success__heading">
+          Ваша заявка отправлена
+        </p>
+        <p class="modal-success__content">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+        </p>
+       </div>
+
+        <div class="modal-success__button_wrapper">
+          <button class="modal-success__button button" type="button">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main-nav.js"></script>
  </body>
 </html>

@@ -1,16 +1,16 @@
 .reviews  {
   font-family: "OpenSans", "Arial", sans-serif;
   line-height: 30px;
-
-    &__wrapper {
-
+}
+.reviews__wrapper {
+  position: relative;
       @media (min-width: $mobile-width) {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         text-align: center;
-        min-height: 364px;
+        min-height: 344px;
         width: 90%;
         margin: 0 auto;
       }
@@ -18,11 +18,11 @@
       @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
         width: 90%;
-        min-height: 340px;
+        min-height: 280px;
         text-align: center;
       }
 
@@ -34,26 +34,65 @@
         text-align: center;
         margin: 0 auto;
         width: 80%;
-        min-height: 410px;
+        min-height: 405px;
       }
+}
+
+.reviews__item {
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.reviews__list {
+  @include list();
+  display: flex;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 63%;
+  }
+
+  &_wrapper {
+    display: flex;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 90%;
+      margin: 0 auto;
     }
+  }
+}
 
+.reviews__content {
+  font-size: 14px;
+  margin: 0;
 
-    &__list {
-     @include list();
-    }
+  @media (max-width: $mobile-width) {
+    order: 0;
+  }
+}
 
-    &__name {
-     font-size: 18px;
-     font-weight: bold;
-     color: $black;
-    }
+.reviews__name {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black;
 
-    &__content {
-     font-size: 14px;
-    }
+  @media (max-width: $mobile-width) {
+    order: 1;
+  }
 
-    &__legend {
+  @media (min-width: $desktop-width) {
+    margin-top: 1em;
+  }
+}
+
+.reviews__legend {
 
       @media (min-width: $mobile-width) {
         display: none;
@@ -66,24 +105,7 @@
       @media (min-width: $desktop-width) {
         display: block;
       }
-    }
-
-}
-
-.slider__toggle {
-
-  @media (min-width: $mobile-width) {
-    display: block;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
+ }
 
 .reviews__toggles {
 
@@ -91,14 +113,93 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60px;
+    align-items: center;
+    width: 4em;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 60px;
+    margin-top: 2.5em;
   }
 
+}
+
+.reviews__toggle {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  }
+
+.reviews__toggle + label::before {
+
+  @media (max-width: $mobile-width) {
+  content:'';
+  display: block;
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $grey;
+  border-radius: 50%;
+  background-color: $dark;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 6'%3e%3ccircle r='3' opacity='0.3' fill='%23283645'/%3e%3c/svg%3e");
+  }
+}
+
+.reviews__toggle:checked + label::before {
+  border: 3px solid $dark;
+  background-color: $white;
+}
+
+.reviews__toggle {
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__svg-icon {
+
+  &_blockquote {
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 2em;
+    margin-top: 4em;
+  }
+ }
+
+ &_left,
+ &_right {
+
+   @media (min-width: $mobile-width) {
+     display: none;
+   }
+
+   @media (min-width: $tablet-width) {
+     display: none;
+   }
+
+   @media (min-width: $desktop-width) {
+     display: block;
+     margin-top: 2em;
+     cursor: pointer;
+   }
+
+  }
+}
+
+.reviews__svg-icon_left:hover,
+.reviews__svg-icon_right:hover {
+  fill: transparentize($dark, 0.6);
 }
