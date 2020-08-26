@@ -1,18 +1,15 @@
 .features {
     font-family: "OpenSans", "Arial", sans-serif;
     background-color: $white;
+    position: relative;
+    z-index: 9;
 
     @media (min-width: $mobile-width) {
       min-height: 1002px;
-      background-image: url("../img/iphone-screen-mobile@1x.png");
-      background-repeat: no-repeat;
-      background-position: 50% 105%;
     }
 
     @media (min-width: $tablet-width) {
       min-height: 725px;
-      position: relative;
-      z-index: 9;
     }
 
     @media (min-width: $desktop-width) {
@@ -21,6 +18,19 @@
 }
 
 .features:before {
+
+  @media (min-width: $mobile-width) {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    height: 275px;
+    bottom: 0;
+    left: 25%;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $tablet-width) {
    content: '';
    position: absolute;
@@ -85,6 +95,7 @@
 
 .features__wrapper {
  width: 100%;
+ position: relative;
 
   @media (min-width: $mobile-width) {
     display: flex;
@@ -170,6 +181,7 @@
       align-items: center;
       text-align: center;
       min-height: 390px;
+      margin-top: 5em;
     }
 
     @media (min-width: $tablet-width) {
@@ -228,7 +240,6 @@
         flex-direction: column;
         justify-content: flex-start;
         min-height: 794px;
-        margin-top: 5em;
       }
 
       @media (min-width: $tablet-width) {
@@ -236,7 +247,6 @@
         flex-direction: row;
         justify-content: flex-end;
         min-height: 480px;
-        margin-top: 0;
       }
 
       @media (min-width: $desktop-width) {
