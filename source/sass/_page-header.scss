@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 90%;
+    width: 84%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,8 +67,7 @@
     @media (min-width: $mobile-width) {
       display: flex;
       justify-content: flex-start;
-
-      width: 90%;
+      width: 87%;
       min-height: 70px;
     }
 
@@ -78,26 +77,43 @@
 
     @media (min-width: $desktop-width) {
       min-height: 110px;
+      width: 43%;
+      padding-left: 2em;
   }
 
 }
 
 .page-header__logo {
 
-        @media (min-width: $mobile-width) {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          min-height: 70px;
-        }
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+  }
 
-        @media (min-width: $tablet-width) {
-         min-height: 110px;
-        }
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+  }
 
-        @media (min-width: $desktop-width) {
-         min-height: 110px;
-       }
+  @media (min-width: $desktop-width) {
+    min-height: 110px;
+  }
+
+  &_svg {
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+    padding-bottom: 13px;
+   }
+
+   @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 40px;
+    padding-bottom: 13px;
+   }
+  }
 }
 
 .main-nav {
@@ -118,6 +134,17 @@
       border: none;
 
     }
+}
+
+.main-nav-opened .site-list__item:first-child::before {
+
+  @media (max-width: $tablet-width) {
+   content: '';
+   position: absolute;
+   width: 100%;
+   top: -2px;
+   border-top: 1px solid $black;
+  }
 }
 
 .main-nav__wrapper {
@@ -366,6 +393,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 
   @media (min-width: $mobile-width) {
     padding-top: 20px;

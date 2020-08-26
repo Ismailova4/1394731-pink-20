@@ -15,7 +15,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+            <img class="page-header__logo_svg" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
           </picture>
          </a>
         </div>
@@ -43,7 +43,7 @@
             </li>
             <li class="site-list__item">
                 <a class="site-list__link" href="https://htmlacademy.ru/">
-                  HTML ACADEMY
+                  Html Academy
                 </a>
             </li>
           </ul>
@@ -115,11 +115,14 @@
              Устали от серости мегаполиса?
            </p>
            <p class="features__description_item">
-            Нам есть, что вам предложить!
+            Нам есть, что вам<br> предложить!
            </p>
           </div>
          </div>
        <div class="features__list_wrapper">
+       <!-- <div class="features__mask">
+          <img class="features__mask_pic" src="img/mask-@mobile.png" width="320" height="35" alt="mask">
+        </div> -->
         <div class="features__list_wrap">
          <div class="features__list">
           <div class="features__item">
@@ -135,7 +138,7 @@
             Меняет мир вокруг
           </p>
           <p class="features__content">
-            Сделайте снимок и украсьте смайликом или текстовой подписью, чтобы усилить эффект
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </p>
            </div>
           <div class="features__item">
@@ -155,9 +158,19 @@
          <h2 class="visually-hidden">Эффект</h2>
         <div class="research__wrapper">
           <div class="research__svg_wrapper">
-           <svg class="research__svg-icon" width="238" height="276" viewBox="0 0 238 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+           <svg class="research__svg-icon_timer" width="238" height="276" viewBox="0 0 238 276" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M211.314 81.6277L215.587 77.3408C221.752 71.1663 222.878 62.1925 218.086 57.4017C213.294 52.6109 204.334 53.7227 198.176 59.8971L193.871 64.208C176.746 50.2779 156.074 41.4187 134.187 38.6304V30.9603H140.305C149.019 30.9603 156.151 23.994 156.151 15.4842C156.151 6.97427 149.019 0 140.305 0H97.7208C89.0075 0 81.8755 6.96627 81.8755 15.4842C81.8755 24.002 89.0075 30.9603 97.7208 30.9603H103.839V38.6304C77.6967 41.9933 53.4093 53.9522 34.7872 72.6308C16.1652 91.3093 4.26218 115.651 0.945904 141.835C-2.37038 168.02 3.08772 194.566 16.4638 217.309C29.8399 240.052 50.377 257.704 74.8528 267.496C99.3286 277.288 126.358 278.665 151.7 271.412C177.042 264.16 199.263 248.687 214.875 227.421C230.488 206.156 238.609 180.302 237.964 153.915C237.32 127.529 227.946 102.103 211.314 81.6277ZM119.013 244.947C101.61 244.947 84.5984 239.779 70.1286 230.097C55.6589 220.414 44.3813 206.652 37.7219 190.551C31.0625 174.45 29.3205 156.733 32.7162 139.64C36.1119 122.547 44.4927 106.847 56.7989 94.5241C69.105 82.2015 84.7837 73.81 101.852 70.411C118.921 67.012 136.613 68.7581 152.69 75.4285C168.768 82.0989 182.509 93.3939 192.176 107.885C201.844 122.377 207.003 139.413 207.001 156.841C206.999 180.209 197.728 202.619 181.227 219.142C164.726 235.665 142.347 244.947 119.013 244.947Z" fill="#DEDEDE"/>
            </svg>
+
+           <svg class="research__svg-icon_circle" width="202" height="202" viewBox="0 0 202 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="101" cy="101" r="93" stroke="#D22856" stroke-width="16"/>
+           </svg>
+
+           <svg class="research__svg-icon_text" width="106" height="70" viewBox="0 0 106 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.9062 70H1V59.9219L18.2031 42.5312C23.2969 37.3125 26.625 33.7031 28.1875 31.7031C29.75 29.6719 30.875 27.7969 31.5625 26.0781C32.25 24.3594 32.5938 22.5781 32.5938 20.7344C32.5938 17.9844 31.8281 15.9375 30.2969 14.5938C28.7969 13.25 26.7812 12.5781 24.25 12.5781C21.5938 12.5781 19.0156 13.1875 16.5156 14.4062C14.0156 15.625 11.4062 17.3594 8.6875 19.6094L0.8125 10.2812C4.1875 7.40625 6.98438 5.375 9.20312 4.1875C11.4219 3 13.8438 2.09375 16.4688 1.46875C19.0938 0.8125 22.0312 0.484375 25.2812 0.484375C29.5625 0.484375 33.3438 1.26563 36.625 2.82812C39.9062 4.39062 42.4531 6.57812 44.2656 9.39062C46.0781 12.2031 46.9844 15.4219 46.9844 19.0469C46.9844 22.2031 46.4219 25.1719 45.2969 27.9531C44.2031 30.7031 42.4844 33.5312 40.1406 36.4375C37.8281 39.3438 33.7344 43.4844 27.8594 48.8594L19.0469 57.1562V57.8125H48.9062V70ZM105.297 55.7969H97.0469V70H82.8906V55.7969H53.6406V45.7188L83.6875 1.46875H97.0469V44.5469H105.297V55.7969ZM82.8906 44.5469V32.9219C82.8906 30.9844 82.9688 28.1719 83.125 24.4844C83.2812 20.7969 83.4062 18.6563 83.5 18.0625H83.125C81.9688 20.625 80.5781 23.125 78.9531 25.5625L66.3906 44.5469H82.8906Z" fill="#D22856"/>
+            </svg>
+
           </div>
           <div class="research__text_wrapper">
            <h3 class="research__heading">Эффект на 24 часа!</h3>
@@ -173,29 +186,44 @@
        <section class="reviews">
          <h2 class="visually-hidden">Отзывы</h2>
          <div class="reviews__wrapper">
-          <ul class="reviews__list slider-list">
-           <li class="reviews__item slider-item">
-             <p class="reviews__content">
+          <svg class="reviews__svg-icon_blockquote" width="79" height="63" viewBox="0 0 79 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35.1468 6.97257L30.8388 0C28.3886 1.48142 0 12.0588 0 39.1293C0 46.2698 0.341426 63 18.9793 63C30.2162 63 32.9778 52.8473 32.9778 49.5783C32.9778 27.8508 11.5081 35.5838 11.5081 35.5838C11.5081 17.7771 31.3911 9.06631 35.1468 6.97257Z" fill="#EFEFEF"/>
+            <path d="M79 6.97257L74.7322 0C72.302 1.48142 43.8833 12.0588 43.8833 39.1293C43.8833 46.2698 44.2247 63 62.8726 63C74.0995 63 76.8611 52.8473 76.8611 49.5783C76.8611 27.8508 55.3914 35.5838 55.3914 35.5838C55.3914 17.7771 75.3146 9.06631 79 6.97257Z" fill="#EFEFEF"/>
+          </svg>
+
+          <div class="reviews__list_wrapper">
+
+           <svg class="reviews__svg-icon_left" width="22" height="41" viewBox="0 0 22 41" xmlns="http://www.w3.org/2000/svg">
+             <path opacity="0.3" d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z"/>
+           </svg>
+
+           <ul class="reviews__list slider-list">
+            <li class="reviews__item slider-item">
+              <p class="reviews__content">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-             </p>
-             <span class="reviews__name">
+              </p>
+              <span class="reviews__name">
               Николай Петров
-            </span>
-             <span class="reviews__legend">
+              </span>
+              <span class="reviews__legend">
               25 лет, водитель трамвая
-             </span>
-           </li>
-         </ul>
+              </span>
+            </li>
+          </ul>
+
+           <svg class="reviews__svg-icon_right" width="22" height="41" viewBox="0 0 22 41" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.3" d="M19.9587 20.4965L0.251671 39.5856C0.171938 39.6621 0.108643 39.7532 0.065443 39.8535C0.0222435 39.9539 0 40.0616 0 40.1704C0 40.2791 0.0222435 40.3868 0.065443 40.4872C0.108643 40.5876 0.171938 40.6786 0.251671 40.7551C0.33144 40.8327 0.426224 40.8943 0.530588 40.9363C0.634953 40.9784 0.746847 41 0.859852 41C0.972857 41 1.08475 40.9784 1.18911 40.9363C1.29348 40.8943 1.38826 40.8327 1.46803 40.7551L21.7475 21.0912C21.8275 21.0138 21.891 20.9219 21.9344 20.8207C21.9777 20.7195 22 20.611 22 20.5015C22 20.3919 21.9777 20.2834 21.9344 20.1822C21.891 20.081 21.8275 19.9891 21.7475 19.9117L1.46803 0.237877C1.30326 0.0842934 1.08329 -0.00102615 0.85474 7.62939e-06C0.6861 0.00154114 0.52166 0.0511971 0.381939 0.14278C0.24222 0.234364 0.133411 0.363811 0.069088 0.51498C0.00476646 0.666149 -0.0122204 0.83234 0.0202503 0.992809C0.052721 1.15328 0.133209 1.30093 0.251671 1.41732L19.9587 20.4965Z"/>
+           </svg>
+
+          </div>
+
          <div class="reviews__toggles slider__toggles">
-           <button class="slider__toggle slider__toggle_current" type="button">
-            1
-           </button>
-           <button class="slider__toggle" type="button">
-            2
-           </button>
-           <button class="slider__toggle" type="button">
-            3
-           </button>
+          <input class="reviews__toggle" type="radio" name="reviews" id="reviews-radio-1" checked>
+          <label for="reviews-radio-1"></label>
+          <input class="reviews__toggle" type="radio" name="reviews" id="reviews-radio-2">
+          <label for="reviews-radio-2"></label>
+          <input class="reviews__toggle" type="radio" name="reviews" id="reviews-radio-3">
+          <label for="reviews-radio-3"></label>
           </div>
          </div>
        </section>
@@ -205,39 +233,53 @@
           <tr class="price__heading">
 
             <th class="price__heading_item">
-              <p class="price__heading_item price__heading_item-type">
+             <div class="price__heading_wrapper">
+              <p class="price__heading_item-type">
+
+              </p>
+              <span class="price__amount">
+
+              </span>
+             </div>
+            </th>
+
+            <th class="price__heading_item">
+             <div class="price__heading_wrapper">
+              <p class="price__heading_item-type">
                 База
               </p>
               <span class="price__amount">
                 1,99 USD
               </span>
+             </div>
             </th>
 
             <th class="price__heading_item">
-              <p class="price__heading_item price__heading_item-type">
-                База
-              </p>
-              <span class="price__amount">
-                1,99 USD
+             <div class="price__heading_wrapper">
+              <span class="price__heading_legend">
+                Хит
               </span>
-            </th>
-
-            <th class="price__heading_item">
-              <p class="price__heading_item price__heading_item-type">
+               <svg class="price__heading_svg-bg" width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M74 0L37 37L0 74V41L41 0H74Z" fill="#D22856"/>
+               </svg>
+              <p class="price__heading_item-type">
                 Стандарт
               </p>
               <span class="price__amount">
                 3,99 USD
               </span>
+             </div>
             </th>
 
             <th class="price__heading_item">
-              <p class="price__heading_item price__heading_item-type">
+             <div class="price__heading_wrapper">
+              <p class="price__heading_item-type">
                 Анлим
               </p>
               <span class="price__amount">
                 9,99 USD
               </span>
+             </div>
             </th>
           </tr>
 
@@ -255,9 +297,14 @@
             </td>
 
             <td class="price__description_item">
+             <div class="price__description_wrapper">
+              <p class="price__description_mobile">
+                Розовый фильтр
+              </p>
               <svg class="svg-icon--tick" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
               </svg>
+              </div>
             </td>
 
             <td class="price__description_item">
@@ -282,9 +329,14 @@
             </td>
 
             <td class="price__description_item">
+             <div class="price__description_wrapper">
+              <p class="price__description_mobile">
+                Смайлики
+              </p>
               <svg class="svg-icon--tick" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
               </svg>
+             </div>
             </td>
 
             <td class="price__description_item">
@@ -309,9 +361,14 @@
             </td>
 
             <td class="price__description_item">
+             <div class="price__description_wrapper">
+              <p class="price__description_mobile">
+                Комментарии
+              </p>
               <svg class="svg-icon--cross" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899 25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056 0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333 24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771 26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888 27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z" fill="#F25B26"/>
                </svg>
+              </div>
             </td>
 
             <td class="price__description_item">
@@ -322,23 +379,20 @@
 
           </tr>
         </table>
-        <div class="price_toggles slider__toggles">
-          <button class="slider__toggle" type="button">
-           1
-          </button>
-          <button class="slider__toggle  slider__toggle_current" type="button">
-           2
-          </button>
-          <button class="slider__toggle" type="button">
-           3
-          </button>
+        <div class="price__toggles slider__toggles">
+          <input class="price__toggle" type="radio" name="price" id="price-radio-1">
+          <label for="price-radio-1"></label>
+          <input class="price__toggle" type="radio" name="price" id="price-radio-2" checked>
+          <label for="price-radio-2"></label>
+          <input class="price__toggle" type="radio" name="price" id="price-radio-3">
+          <label for="price-radio-3"></label>
         </div>
        </div>
        </section>
      </main>
      <footer class="page-footer-index">
       <div class="page-footer-index__contacts_list_wrapper">
-
+       <div class="page-footer-index__wrapper">
         <p class="page-footer-index__contacts_text">
           Остались вопросы?<br> Свяжитесь с нами!
         </p>
@@ -365,14 +419,16 @@
               Приезжайте в гости:
             </p>
             <p class="page-footer-index__contacts_list-text">
-              ул. Большая Конюшенная, 19/8
+              ул. Большая<br> Конюшенная, 19/8
             </p>
           </li>
         </ul>
+       </div>
 
       </div>
 
       <div class="page-footer-index__map">
+        <svg class="page-footer-index__mask" version="1.0" id="bg-triangle-white-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve"> <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "></polygon></svg>
         <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1596179105467!5m2!1sen!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
 
@@ -425,28 +481,6 @@
 
      </div>
     </footer>
-     <script>
-       var navMain = document.querySelector('.main-nav');
-       var navToggle = document.querySelector('.main-nav__toggle');
-       var pageHeader = document.querySelector('.page-header__wrapper');
-
-       navMain.classList.remove('main-nav-nojs');
-
-       navToggle.addEventListener('click', function() {
-
-        if (navMain.classList.contains('main-nav-closed')) {
-          navMain.classList.remove('main-nav-closed');
-          navMain.classList.add('main-nav-opened');
-          pageHeader.style.backgroundColor = '#283645';
-        }
-          else {
-            navMain.classList.add('main-nav-closed');
-            navMain.classList.remove('main-nav-opened');
-            pageHeader.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
-          }
-        }
-       );
-     </script>
-
+    <script src="js/main-nav.js"></script>
  </body>
 </html>
