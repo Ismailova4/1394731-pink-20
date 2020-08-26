@@ -3,7 +3,7 @@
   line-height: 30px;
 }
 .reviews__wrapper {
-
+  position: relative;
       @media (min-width: $mobile-width) {
         display: flex;
         flex-direction: column;
@@ -49,6 +49,7 @@
 
 .reviews__list {
   @include list();
+  display: flex;
   width: 100%;
 
   @media (min-width: $desktop-width) {
@@ -56,6 +57,7 @@
   }
 
   &_wrapper {
+    display: flex;
 
     @media (min-width: $desktop-width) {
       display: flex;

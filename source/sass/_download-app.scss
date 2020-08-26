@@ -16,6 +16,7 @@
       background-repeat: no-repeat, no-repeat;
       background-size: auto auto,
                        auto 462px;
+
     }
 
     @media (min-width: $tablet-width) {
@@ -27,6 +28,7 @@
       background-repeat: no-repeat, no-repeat;
       background-size: 720px 550px,
                        auto 730px;
+
     }
 
     @media (min-width: $desktop-width) {
@@ -38,6 +40,8 @@
       background-repeat: no-repeat, no-repeat;
       background-size: 1000px 640px,
                        cover;
+
+
     }
   }
 
@@ -73,14 +77,6 @@
       align-items: center;
       width: 48%;
       min-height: 400px;
-
-     /* &::after {
-        content: "";
-        position: absolute;
-        background-image: url("../img/iphone-hand-tablet@1x.png");
-        top: 50px;
-        right: 50px;
-      } */
   }
 
   @media (min-width: $desktop-width) {
@@ -129,10 +125,10 @@
 }
 
 .download-app__slogan {
-    font-family: "OpenSans", "Arial", sans-serif;
-    color: $white;
-    font-weight: 300;
-    margin: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  color: $white;
+  font-weight: 300;
+  margin: 0;
 
       @media (min-width: $mobile-width) {
         font-size: 24px;
@@ -184,24 +180,23 @@
 }
 
 .download-app__content {
-    font-weight: 300;
-    color: $white;
-    line-height: 24px;
-    text-align: center;
-    margin: 0;
+  font-weight: 300;
+  color: $white;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
 
-      @media (min-width: $mobile-width) {
-          font-size: 14px;
-      }
+    @media (min-width: $mobile-width) {
+      font-size: 14px;
+    }
 
-      @media (min-width: $tablet-width) {
-          font-size: 18px;
-      }
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
 
-      @media (min-width: $desktop-width) {
-          font-size: 18px;
-      }
-
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
 }
 
 
