@@ -5,11 +5,7 @@
    position: relative;
    z-index: 1;
    background-color: $white;
-   /*background-image: url("../img/triangle_mask.svg");
-   background-repeat: no-repeat;
-   background-size: 101% auto;
-   background-position: 40% 0;*/
-
+  
 
   &:before  {
     content: '';
