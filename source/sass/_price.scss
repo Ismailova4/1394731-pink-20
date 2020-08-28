@@ -5,10 +5,6 @@
    position: relative;
    z-index: 1;
    background-color: $white;
-   /*background-image: url("../img/triangle_mask.svg");
-   background-repeat: no-repeat;
-   background-size: 101% auto;
-   background-position: 40% 0;*/
 
 
   &:before  {
@@ -271,6 +267,7 @@
   flex-grow: 0;
   border: 1px solid $grey;
   border-radius: 50%;
+  opacity: 0.3;
   background-color: $dark;
   background-repeat: no-repeat;
   background-position: center center;
@@ -279,7 +276,30 @@
   }
 }
 
+.price__toggle + label::before:hover {
+  background-color: $dark;
+  opacity: 0.6;
+}
+
+.price__toggle:checked + label::before:hover {
+  opacity: 1;
+  border: 3px solid $dark;
+  background-color: $white;
+}
+
+.price__toggle + label::before:active {
+  background-color: $dark;
+  opacity: 0.1;
+}
+
+.price__toggle:checked + label::before:active {
+  opacity: 1;
+  border: 3px solid $dark;
+  background-color: $white;
+}
+
 .price__toggle:checked + label::before {
+  opacity: 1;
   border: 3px solid $dark;
   background-color: $white;
 }

@@ -242,8 +242,8 @@
      }
 
      @media (min-width: $desktop-width) {
-       flex-basis: 30%;
-     }
+       flex-basis: 33%;
+     } 
 }
 
 .form__contacts {
@@ -805,4 +805,54 @@
   border: 2px solid $grey;
   border-radius: 0.1em;
   background-color: $grey;
+}
+
+.achievements__item:first-child {
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.achievements__item:nth-child(2n) {
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.achievements__item:nth-child(3n+3) {
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.achievements__item:nth-child(4n+4) {
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+  }
+}
+
+.achievements__item:nth-child(5n+5) {
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.achievements__item:last-child {
+
+  @media (min-width: $desktop-width) {
+    order: 5;
+  }
+}
+
+.button:hover {
+  outline-offset: none;
+}
+
+.button:active {
+  outline-offset: none;
 }

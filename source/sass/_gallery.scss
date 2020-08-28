@@ -53,8 +53,9 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2%;
     min-height: 1400px;
-    margin-top: 3.5em;
-  }
+    margin: 3.5em auto 0;
+    width: 95%;
+ }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -174,11 +175,30 @@
     margin: 0 auto;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+
   &_panorama {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.gallery__heading {
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: block;
+    }
   }
 }
 
@@ -226,18 +246,18 @@
     margin-right: 20px;
 
     @media (min-width: $tablet-width) {
+      order: 2;
       margin-right: 0;
     }
   }
 }
 
-/*.gallery__author-info_panorama .gallery__like-counter {
+.like__counter {
 
   @media (min-width: $tablet-width) {
     order: 1;
-    width: 8em;
   }
-}*/
+}
 
 .gallery__hint {
   position: absolute;

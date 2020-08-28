@@ -72,43 +72,43 @@
 width: 90%;
 margin: 0 auto;
 
-@media (min-width: $mobile-width) {
-  position: relative;
-  top: 30px;
-}
+ @media (min-width: $mobile-width) {
+   position: relative;
+   top: 30px;
+  }
 
-@media (min-width: $tablet-width) {
-  position: relative;
-  top: 50px;
-}
+ @media (min-width: $tablet-width) {
+   position: relative;
+   top: 50px;
+  }
 }
 
 .download-app__content_wrapper {
 
 @media (min-width: $mobile-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 610px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 610px;
 }
 
 @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 48%;
-    min-height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 48%;
+   min-height: 400px;
 }
 
 @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 350px;
-    min-height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 350px;
+   min-height: 500px;
 }
 }
 

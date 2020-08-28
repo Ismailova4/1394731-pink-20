@@ -2,6 +2,9 @@
   font-family: "OpenSans", "Arial", sans-serif;
 
   @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     min-height: 240px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -51,49 +54,52 @@
     text-align: center;
 
     @media (min-width: $mobile-width) {
-     min-height: 240px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     min-height: 145px;
      font-size: 24px;
      line-height: 33px;
     }
 
     @media (min-width: $tablet-width) {
-     min-height: 440px;
+     min-height: 270px;
      font-size: 50px;
      line-height: 68px;
     }
 
     @media (min-width: $desktop-width) {
-      min-height: 395px;
+      min-height: 225px;
     }
 
     &_form {
       color: $white;
       font-weight: 300;
       margin: 0 auto;
-      position: relative;
       text-align: center;
-      z-index: 4;
+
 
        @media (min-width: $mobile-width) {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
          width: 80%;
-         top: 90px;
          font-size: 24px;
          line-height: 33px;
-         min-height: 90px;
+         min-height: 185px;
+
        }
 
        @media (min-width: $tablet-width) {
          width: 80%;
-         top: 160px;
          font-size: 50px;
          line-height: 68px;
-         min-height: 175px;
+         min-height: 330px;
        }
 
        @media (min-width: $desktop-width) {
          width: 70%;
-         top: 160px;
-         min-height: 106px;
+         min-height: 310px;
        }
      }
 }
