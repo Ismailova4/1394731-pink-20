@@ -258,7 +258,7 @@
 }
 
 .copyright__svg-icon:active {
-  fill: transparentize($dark, 0.3);
+  fill: transparentize($dark, 0.7);
 }
 
 .social__link {
@@ -283,7 +283,7 @@
 
 .background:active {
   opacity: 0.3;
-  border: 3px solid transparentize($dark, 0.3);
+  border: 3px solid transparentize($dark, 0.7);
 }
 
 .page-footer-index__map {
@@ -324,14 +324,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 40%;
-    left: 47%;
+    top: 38.5%;
+    left: 46.5%;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 2.2em;
     height: 2.2em;
-    top: 41.7%;
+    top: 41.5%;
     left: 48.5%;
   }
 }
@@ -350,4 +350,15 @@
     @media (min-width: $desktop-width) {
       min-height: 502px;
     }
+}
+
+.page-footer-index__contacts_list-link:hover {
+  color: $dark;
+  text-decoration-line: underline;
+}
+
+.page-footer-index__contacts_list-link:active {
+  color: $dark;
+  opacity: 0.3;
+  text-decoration-color: transparent;
 }

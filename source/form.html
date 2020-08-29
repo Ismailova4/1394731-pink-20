@@ -27,16 +27,16 @@
       <div class="main-nav__wrapper">
        <ul class="main-nav__list site-list">
          <li class="site-list__item">
-             <a class="site-list__link">
+             <a class="site-list__link" href="index.html">
                Главная
              </a>
          </li>
-         <li class="site-list__item site-list__item-active">
+         <li class="site-list__item">
              <a class="site-list__link" href="photo.html">
                Фотографии
              </a>
          </li>
-         <li class="site-list__item">
+         <li class="site-list__item  site-list__item_active">
              <a class="site-list__link" href="form.html">
                Конкурc
              </a>
@@ -70,7 +70,7 @@
            <div class="form-name__wrapper">
              <div class="form-name__item">
               <label class="form-name__text highlight" for="surname">Фамилия:</label>
-               <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+               <input class="form__input surname-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
              </div>
              <div class="form-name__item">
               <label class="form-name__text highlight" for="name">Имя:</label>
@@ -163,7 +163,7 @@
           <div class="trip-review__wrapper">
            <fieldset class="trip-review__item">
             <legend class="trip-review__heading highlight">Опишите свои эмоции</legend>
-            <textarea class="trip-review__content" rows="13" name="trip-review" >Можно прям в красках, не стесняясь в выражениях
+            <textarea class="trip-review__content" rows="13" name="trip-review">Можно прям в красках, не стесняясь в выражениях
             </textarea>
            </fieldset>
            <div class="trip-review__button">
@@ -222,7 +222,7 @@
        </div>
     </footer>
 
-    <div class="modal-error">
+    <div class="modal-error modal-error-closed">
 
         <div class="modal-error__text_wrapper">
          <p class="modal-error__heading">
@@ -239,7 +239,7 @@
 
     </div>
 
-    <div class="modal-success">
+    <div class="modal-success modal-success-closed">
 
        <div class="modal-success__text_wrapper">
         <p class="modal-success__heading">
@@ -253,8 +253,10 @@
         <div class="modal-success__button_wrapper">
           <button class="modal-success__button button" type="button">Закрыть окно</button>
         </div>
+
       </div>
     </div>
+    <script src="js/modal.js"></script>
     <script src="js/main-nav.js"></script>
  </body>
 </html>

@@ -1,4 +1,12 @@
 .modal-error {
+  display: none;
+}
+
+.modal-error-closed {
+  display: none;
+}
+
+.modal-error-show {
   font-family: "OpenSans", "Arial", sans-serif;
   background-color: $white;
   box-sizing: border-box;
@@ -77,6 +85,14 @@
 }
 
 .modal-success {
+  display: none;
+}
+
+.modal-success-closed {
+  display: none;
+}
+
+.modal-success-show {
   font-family: "OpenSans", "Arial", sans-serif;
   background-color: $white;
   box-sizing: border-box;
