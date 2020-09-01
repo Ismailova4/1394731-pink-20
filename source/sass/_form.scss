@@ -1,30 +1,25 @@
 .form {
-   font-family: "OpenSans", "Arial", sans-serif;
    font-size: 18px;
    line-height: 30px;
 }
 
 .form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
 
     @media (min-width: $mobile-width) {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
      width: 100%;
      min-height: 2050px;
     }
 
     @media (min-width: $tablet-width) {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
      min-height: 2150px;
      width: 92%;
     }
 
     @media (min-width: $desktop-width) {
-     display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      min-height: 1250px;
@@ -33,46 +28,38 @@
 }
 
 .form-name__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 
     @media (min-width: $mobile-width) {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-     align-items: center;
      min-height: 370px;
     }
 
     @media (min-width: $tablet-width) {
-     display: flex;
-     flex-direction: column;
      justify-content: space-between;
-     align-items: center;
      min-height: 295px;
      width: 100%;
     }
 
     @media (min-width: $desktop-width) {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
      align-items: flex-start;
      width: 45%;
     }
 }
 
 .form-name__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
     @media (min-width: $mobile-width) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       min-height: 90px;
     }
 
     @media (min-width: $tablet-width) {
-      display: flex;
       flex-direction: row;
-      justify-content: space-between;
       align-items: center;
       width: 100%;
     }
@@ -91,7 +78,7 @@
 
 }
 
-.form__contacts_heading {
+.form__contacts--heading {
 
   @media (min-width: $mobile-width) {
     display: none;
@@ -173,153 +160,123 @@
 }
 
 .achievements__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-     @media (min-width: $mobile-width) {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 450px;
-        width: 90%;
-        top: 4.5em;
-        margin: 0 auto;
-    }
+  @media (min-width: $mobile-width) {
+    min-height: 450px;
+    width: 90%;
+    top: 4.5em;
+    margin: 0 auto;
+  }
 
-     @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        min-height: 535px;
-        width: 85%;
-        top: 0;
-     }
+  @media (min-width: $tablet-width) {
+    justify-content: space-evenly;
+    min-height: 535px;
+    width: 85%;
+    top: 0;
+  }
 
-     @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        min-height: 230px;
-
-     }
-   }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 230px;
+  }
+}
 
 .achievements__heading {
+  position: relative;
+  width: 70%;
 
-     @media (min-width: $mobile-width) {
-        position: relative;
-        top: 3.5em;
-        text-align: center;
-        width: 70%;
-        margin: 0 auto;
-     }
+  @media (min-width: $mobile-width) {
+    top: 3.5em;
+    text-align: center;
+    margin: 0 auto;
+  }
 
-     @media (min-width: $tablet-width) {
-        top: 0;
-        width: 70%;
-     }
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 
-     @media (min-width: $desktop-width) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 48%;
-     }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+  }
 }
 
 .achievements__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-     @media (min-width: $mobile-width) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-     }
-
-     @media (min-width: $tablet-width) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-     }
-
-     @media (min-width: $desktop-width) {
-       flex-basis: 33%;
-     } 
+  @media (min-width: $desktop-width) {
+    flex-basis: 33%;
+  }
 }
 
 .form__contacts {
 
-    @media (min-width: $mobile-width) {
-        border: none;
-        margin: 0;
-        padding: 0;
-    }
+  @media (min-width: $mobile-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 
-    @media (min-width: $tablet-width) {
-        order: 2;
-        min-height: 315px;
-        width: 100%;
-        border: 2px solid $light;
-        border-radius: 1px;
-    }
+  @media (min-width: $tablet-width) {
+    order: 2;
+    min-height: 315px;
+    width: 100%;
+    border: 2px solid $light;
+    border-radius: 1px;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin-top: 60px;
-        min-height: 170px;
-        border: 2px solid $light;
-        border-radius: 1px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    min-height: 170px;
+    border: 2px solid $light;
+    border-radius: 1px;
+  }
 
-    &_wrapper {
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
 
         @media (min-width: $mobile-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            min-height: 290px;
-            width: 90%;
-            margin: 0 auto;
+          min-height: 290px;
+          width: 90%;
+          margin: 0 auto;
         }
 
         @media (min-width: $tablet-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: 80%;
-            min-height: 295px;
+          width: 80%;
+          min-height: 295px;
         }
 
         @media (min-width: $desktop-width) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-end;
-            min-height: 135px;
-            width: 95%;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-end;
+          min-height: 135px;
+          width: 95%;
         }
     }
 
-    &_item {
-
-        @media (min-width: $mobile-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            min-height: 90px;
-        }
-
-        @media (min-width: $tablet-width) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            min-height: 90px;
-          }
+    &--item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-height: 90px;
     }
 
 }
 
-.form__contacts_item .highlight {
+.form__contacts--item .highlight {
 
     @media (min-width: $mobile-width) {
       margin-left: 1.2em;
@@ -331,14 +288,14 @@
 }
 
 .app__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 
     @media (min-width: $mobile-width) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      width: 100%;
-      margin: 0 auto;
-      position: relative;
       min-height: 340px;
       padding: 0;
       border: none;
@@ -346,79 +303,67 @@
     }
 
     @media (min-width: $tablet-width) {
-       order: 1;
-       border: 2px solid $light;
-       border-radius: 1px;
-       background-color: $white;
-       box-sizing: border-box;
-       min-height: 300px;
-       width: 100%;
+      order: 1;
+      border: 2px solid $light;
+      border-radius: 1px;
+      background-color: $white;
+      box-sizing: border-box;
+      min-height: 300px;
     }
 
     @media (min-width: $desktop-width) {
-       order: 1;
-       border: 2px solid $light;
-       border-radius: 1px;
-       background-color: $white;
-       width: 45%;
-       min-height: 300px;
-       margin: 0;
+      order: 1;
+      border: 2px solid $light;
+      border-radius: 1px;
+      background-color: $white;
+      width: 45%;
+      min-height: 300px;
+      margin: 0;
      }
 }
 
 .app__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
 
    @media (min-width: $mobile-width) {
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
        min-height: 190px;
        width: 90%;
-       position: relative;
        top: 4em;
-       margin: 0 auto;
     }
 
    @media (min-width: $tablet-width) {
        top: 0;
-       display: flex;
-       flex-direction: column;
        justify-content: space-evenly;
        min-height: 300px;
        width: 80%;
     }
 
     @media (min-width: $desktop-width) {
-      width: 70%;
+       width: 70%;
     }
 }
 
 .app__item {
-
-    @media (min-width: $mobile-width) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    @media (min-width: $tablet-width) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .app__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 
     @media (min-width: $mobile-width) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 65%;
-        margin: 0 auto;
-        position: relative;
-        top: 3em;
+      width: 65%;
+      top: 3em;
     }
 
     @media (min-width: $tablet-width) {
@@ -440,32 +385,25 @@
 }
 
 .trip-review__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 
     @media (min-width: $mobile-width) {
-       display: flex;
-       flex-direction: column;
-       justify-content: space-around;
-       align-items: center;
        min-height: 465px;
-       width: 100%;
     }
 
     @media (min-width: $tablet-width) {
-       display: flex;
-       flex-direction: column;
        justify-content: space-evenly;
-       align-items: center;
        order: 4;
        min-height: 470px;
     }
 
     @media (min-width: $desktop-width) {
-       display: flex;
-       flex-direction: column;
        justify-content: space-around;
-       align-items: center;
        order: 4;
-       width: 100%;
        min-height: 350px;
     }
 }
@@ -489,42 +427,31 @@
 }
 
 .trip-review__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
-     @media (min-width: $mobile-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    @media (min-width: $mobile-width) {
         min-height: 230px;
         border: none;
         margin: 0;
         padding: 0;
-        width: 100%;
-     }
+    }
 
      @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
         border: 2px solid $light;
         border-radius: 1px;
         margin-left: 1.7em;
         margin-right: 1.7em;
-        width: 100%;
     }
 
     @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         border: 2px solid $light;
         border-radius: 1px;
         margin: 0;
-        width: 100%;
-
-
     }
 }
 
@@ -563,49 +490,38 @@
 }
 
 .trip-review__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
       @media (min-width: $mobile-width) {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
           min-height: 130px;
       }
 
       @media (min-width: $tablet-width) {
-          display: flex;
-          flex-direction: column;
           justify-content: center;
-          align-items: center;
           min-height: 120px;
           width: 100%;
       }
 
        @media (min-width: $desktop-width) {
-          display: flex;
-          flex-direction: column;
           justify-content: flex-end;
-          align-items: center;
+      }
 
-       }
-
-       &_wrapper {
+       &--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
 
         @media (min-width: $mobile-width) {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
           min-height: 130px;
         }
 
         @media (min-width: $tablet-width) {
-          display: flex;
           flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
           min-height: 70px;
         }
        }
@@ -772,6 +688,100 @@
   }
 }
 
+.input-tel,
+.input-email {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 372px;
+  }
+}
+
+.form__input--bg-phone {
+  position: absolute;
+  z-index: 1;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 1460px;
+    right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1053px;
+    left: 499px;
+  }
+}
+
+.form__input--bg-mail {
+  position: absolute;
+  z-index: 1;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 1589px;
+    right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1053px;
+    right: 190px;
+  }
+}
+
+.form__input--svg-icon-phone {
+  position: absolute;
+  z-index: 2;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 1478px;
+    right: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1073px;
+    left: 520px;
+  }
+
+}
+
+.form__input--svg-icon-mail {
+  position: absolute;
+  z-index: 2;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 1610px;
+    right: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+   top: 1075px;
+   right: 210px;
+  }
+}
+
 .form__input:hover {
   border: 2px solid $dark;
   border-radius: 0.1em;
@@ -856,3 +866,4 @@
 .button:active {
   outline-offset: none;
 }
+

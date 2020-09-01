@@ -28,38 +28,31 @@ if (storage) {
   surname.focus();
 }
 
-
 submitButton.addEventListener('click', function(evt) {
-  if (!surname || !name || !mailAddress) {
-    evt.preventDefault();
-    modalError.classList.add('modal-error-show');
 
-    closeErrorButton.addEventListener('click', function(evt) {
-         evt.preventDefault;
-         modalError.classList.remove('modal-error-show');
-      });
-  } else {
-     if (isStorageSupport) {
-       localStorage.setItem("surname-input", surname.value);
-       localStorage.setItem("name-input", name.value);
-       localStorage.setItem("input-email", mailAddress.value);
-     }
-  }
+ if ( surname.value == 0 || name.value == 0 || mailAddress.value == 0 ) {
+   evt.preventDefault();
+   modalError.classList.remove('modal-error-closed');
+   modalError.classList.add('modal-error-show');
 
-});
+   closeErrorButton.addEventListener('click', function(evt) {
+    evt.preventDefault;
+    modalError.classList.remove('modal-error-show');
+ });
 
-submitButton.addEventListener('click', function(evt) {
-  evt.preventDefault();
-
- if (modalSuccess.classList.contains('modal-success-closed')) {
+} else {
    modalSuccess.classList.remove('modal-success-closed');
    modalSuccess.classList.add('modal-success-show');
-} else {
-   modalSuccess.classList.remove('modal-success-show');
-   modalSuccess.classList.add('.modal-success-closed');
+
+   if (isStorageSupport) {
+    localStorage.setItem("surname-input", surname.value);
+    localStorage.setItem("name-input", name.value);
+    localStorage.setItem("input-email", mailAddress.value);
+  }
 }
 
 });
+
 
 closeButton.addEventListener('click', function(evt) {
   evt.preventDefault;
