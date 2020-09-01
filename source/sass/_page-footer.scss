@@ -367,6 +367,7 @@
 
 .page-footer__map {
    width: 100%;
+   border: none;
 
     @media (min-width: $mobile-width) {
       min-height: 200px;
