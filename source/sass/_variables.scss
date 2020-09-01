@@ -1,4 +1,3 @@
-/*$font-stack: "OpenSans", sans-serif;*/
 $dark: #283645;
 $dark-blue: #1d2631;
 $light-blue: rgba(40, 54, 69, 0.3);
@@ -51,22 +50,19 @@ $desktop-width: 1200px;
 }
 
 .page-body {
-    font: "OpenSans", "Arial", sans-serif;
-    color: $dark;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-}
-
-body {
-    margin: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  color: $dark;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 

@@ -1,50 +1,35 @@
 .reviews  {
-  font-family: "OpenSans", "Arial", sans-serif;
   line-height: 30px;
 }
+
 .reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 
       @media (min-width: $mobile-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
         min-height: 344px;
         width: 90%;
-        margin: 0 auto;
       }
 
       @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 auto;
         width: 90%;
         min-height: 280px;
-        text-align: center;
       }
 
       @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
         width: 80%;
-        min-height: 405px;
+        min-height: 410px;
       }
 }
 
 .reviews__item {
-
-  @media (min-width: $mobile-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .reviews__list {
@@ -52,10 +37,10 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    width: 63%;
+    width: 75%;
   }
 
-  &_wrapper {
+  &--wrapper {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
@@ -63,9 +48,7 @@
       min-height: 165px;
     }
     @media (min-width: $desktop-width) {
-      display: flex;
       flex-direction: row;
-      justify-content: space-between;
       align-items: flex-start;
       width: 90%;
       margin: 0 auto;
@@ -87,6 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    text-align: center;
     margin-bottom: 0;
   }
 }
@@ -112,32 +96,28 @@
 
 .reviews__legend {
 
-      @media (min-width: $mobile-width) {
-        display: none;
-      }
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
 
-      @media (min-width: $tablet-width) {
-        display: block;
-      }
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 
-      @media (min-width: $desktop-width) {
-        display: block;
-      }
- }
+}
 
 .reviews__toggles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $mobile-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 4em;
     padding-bottom: 1.5em;
   }
 
   @media (min-width: $tablet-width) {
-
     padding-bottom: 0;
   }
 
@@ -211,7 +191,7 @@
 
 .reviews__svg-icon {
 
-  &_blockquote {
+  &--blockquote {
 
   @media (min-width: $mobile-width) {
     display: none;
@@ -223,13 +203,13 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-bottom: 4em;
-    margin-top: 4em;
+    margin-bottom: 3em;
+    margin-top: 3em;
   }
  }
 
- &_left,
- &_right {
+ &--left,
+ &--right {
 
    @media (min-width: $mobile-width) {
      display: none;
@@ -247,18 +227,18 @@
   }
 }
 
-.reviews__svg-icon_left,
-.reviews__svg-icon_right {
+.reviews__svg-icon--left,
+.reviews__svg-icon--right {
   fill: transparentize($dark, 0.7);
 }
 
-.reviews__svg-icon_left:hover,
-.reviews__svg-icon_right:hover {
+.reviews__svg-icon--left:hover,
+.reviews__svg-icon--right:hover {
   fill: transparentize($dark, 0.4);
 }
 
-.reviews__svg-icon_left:active,
-.reviews__svg-icon_right:active {
+.reviews__svg-icon--left:active,
+.reviews__svg-icon--right:active {
   fill: transparentize($dark, 0.9);
 }
 

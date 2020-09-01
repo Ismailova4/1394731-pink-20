@@ -1,5 +1,4 @@
 .download-app {
-  font-family: "OpenSans", "Arial", sans-serif;
   position: relative;
   z-index: 1;
   background-color: $dark-blue;
@@ -69,8 +68,8 @@
 }
 
 .download-app__wrapper {
-width: 90%;
-margin: 0 auto;
+ width: 90%;
+ margin: 0 auto;
 
  @media (min-width: $mobile-width) {
    position: relative;
@@ -78,38 +77,29 @@ margin: 0 auto;
   }
 
  @media (min-width: $tablet-width) {
-   position: relative;
    top: 50px;
   }
 }
 
-.download-app__content_wrapper {
+.download-app__content--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-@media (min-width: $mobile-width) {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+  @media (min-width: $mobile-width) {
    min-height: 610px;
-}
+  }
 
-@media (min-width: $tablet-width) {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+  @media (min-width: $tablet-width) {
    width: 48%;
    min-height: 400px;
-}
+  }
 
-@media (min-width: $desktop-width) {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+  @media (min-width: $desktop-width) {
    width: 350px;
    min-height: 500px;
-}
+  }
 }
 
 .download-app__button {
@@ -128,50 +118,47 @@ margin: 0 auto;
   background-color: transparent;
   cursor: pointer;
 
-      @media (min-width: $mobile-width) {
-        width: 280px;
-        font-size: 18px;
-        padding: 18px 30px 17px 30px;
-      }
+   @media (min-width: $mobile-width) {
+    width: 280px;
+    font-size: 18px;
+    padding: 18px 30px 17px 30px;
+   }
 
-      @media (min-width: $tablet-width) {
-        width: 300px;
-        font-size: 18px;
-        padding: 18px 45px 18px 45px;;
-      }
+   @media (min-width: $tablet-width) {
+    width: 300px;
+    font-size: 18px;
+    padding: 18px 45px 18px 45px;;
+   }
 
-      @media (min-width: $desktop-width) {
-        height: 56px;
-        font-size: 21px;
-        padding: 18px 28px 18px 28px;
-      }
+   @media (min-width: $desktop-width) {
+    height: 56px;
+    font-size: 21px;
+    padding: 18px 28px 18px 28px;
+   }
 }
 
 .download-app__slogan {
   font-family: "OpenSans", "Arial", sans-serif;
   color: $white;
+  text-align: center;
   font-weight: 300;
   margin: 0;
 
-    @media (min-width: $mobile-width) {
-      font-size: 24px;
-      line-height: 120%;
-      text-align: center;
-    }
+  @media (min-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 120%;
+  }
 
-    @media (min-width: $tablet-width) {
-      font-size: 40px;
-      line-height: 120%;
-      max-width: 185px;
-      text-align: center;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    max-width: 185px;
+  }
 
-    @media (min-width: $desktop-width) {
-      font-size: 50px;
-      line-height: 68px;
-      max-width: 230px;
-      text-align: center;
-    }
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 230px;
+  }
 }
 
 .download-app__list {
@@ -181,7 +168,7 @@ margin: 0 auto;
   align-items: baseline;
   width: 205px;
 
-  &_wrapper {
+  &--wrapper {
     display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -203,11 +190,11 @@ margin: 0 auto;
 }
 
 .download-app__content {
-font-weight: 300;
-color: $white;
-line-height: 24px;
-text-align: center;
-margin: 0;
+ font-weight: 300;
+ color: $white;
+ line-height: 24px;
+ text-align: center;
+ margin: 0;
 
   @media (min-width: $mobile-width) {
     font-size: 14px;
@@ -217,7 +204,14 @@ margin: 0;
     font-size: 18px;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
+}
+
+.download-app__button:hover {
+  color: $pink;
+  background-color: $white;
+}
+
+.download-app__button:active {
+  color: transparentize($pink, 0.7);
+  background-color: $white;
 }

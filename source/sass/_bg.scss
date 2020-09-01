@@ -1,5 +1,5 @@
 .bg {
-  font-family: "OpenSans", "Arial", sans-serif;
+  background-color: $dark;
 
   @media (min-width: $mobile-width) {
     display: flex;
@@ -46,7 +46,7 @@
 .bg__slogan {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: $white;
     font-weight: 300;
@@ -54,9 +54,6 @@
     text-align: center;
 
     @media (min-width: $mobile-width) {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
      min-height: 145px;
      font-size: 24px;
      line-height: 33px;
@@ -72,7 +69,10 @@
       min-height: 225px;
     }
 
-    &_form {
+    &--form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       color: $white;
       font-weight: 300;
       margin: 0 auto;
@@ -80,9 +80,6 @@
 
 
        @media (min-width: $mobile-width) {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
          width: 80%;
          font-size: 24px;
          line-height: 33px;
@@ -91,7 +88,6 @@
        }
 
        @media (min-width: $tablet-width) {
-         width: 80%;
          font-size: 50px;
          line-height: 68px;
          min-height: 330px;

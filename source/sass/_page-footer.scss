@@ -1,10 +1,6 @@
-.page-footer-index {
-  font-family: "OpenSans", "Arial", sans-serif;
-}
-
 .page-footer-index__contacts {
 
-    &_text {
+    &--text {
     font-weight: 300;
     margin: 0;
 
@@ -24,7 +20,7 @@
     }
   }
 
-    &_list_wrapper {
+    &--list-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -45,7 +41,7 @@
      }
     }
 
-    &_list {
+    &--list {
      @include list();
 
      @media (min-width: $mobile-width) {
@@ -75,7 +71,7 @@
 
     }
 
-    &_list-link {
+    &--list-link {
      text-decoration: none;
      color: $pink;
      font-weight: 300;
@@ -83,7 +79,7 @@
      line-height: 33px;
     }
 
-    &_list-text {
+    &--list-text {
      color: $pink;
      font-size: 24px;
      line-height: 33px;
@@ -91,7 +87,7 @@
      margin: 0;
     }
 
-    &_list-heading {
+    &--list-heading {
      font-size: 18px;
      font-weight: bold;
      line-height: 25px;
@@ -102,14 +98,14 @@
      }
     }
 
-    &_list-item:nth-of-type(2n) {
+    &--list-item:nth-of-type(2n) {
 
     @media (min-width: $desktop-width) {
         order: 1;
       }
     }
 
-    &_list-item {
+    &--list-item {
 
       @media (min-width: $desktop-width) {
         display: flex;
@@ -139,7 +135,7 @@
    }
 }
 
-.page-footer-index__contacts_wrapper {
+.page-footer-index__contacts--wrapper {
 
   @media (min-width: $mobile-width) {
     display: flex;
@@ -172,25 +168,58 @@
 
 .page-footer__logo {
 
-  &_svg-pink {
+  &--svg-pink {
     fill: $dark;
   }
 
-  &_svg-glasses {
+  &--svg-glasses {
     fill: $pink;
   }
 
-  &_svg-pink:hover {
+  &--svg-pink:hover {
     fill: $pink;
   }
 
-  &_svg-pink:active {
+  &--svg-pink:active {
     fill: transparentize($pink, 0.3);
   }
 
-  &_svg-glasses:active {
+  &--svg-glasses:active {
     fill: transparentize($pink, 0.3);
   }
+}
+
+.page-footer__logo {
+
+  &--svg-mobile  {
+
+   @media (min-width: $mobile-width) {
+    display: block;
+   }
+
+   @media (min-width: $tablet-width) {
+    display: block;
+   }
+
+   @media (min-width: $desktop-width) {
+    display: none;
+   }
+  }
+
+  &--svg-desktop {
+
+    @media (min-width: $mobile-width) {
+     display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+     display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+     display: block;
+    }
+   }
 }
 
 .page-footer__social {
@@ -352,12 +381,12 @@
     }
 }
 
-.page-footer-index__contacts_list-link:hover {
+.page-footer-index__contacts--list-link:hover {
   color: $dark;
   text-decoration-line: underline;
 }
 
-.page-footer-index__contacts_list-link:active {
+.page-footer-index__contacts--list-link:active {
   color: $dark;
   opacity: 0.3;
   text-decoration-color: transparent;

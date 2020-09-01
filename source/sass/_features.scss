@@ -1,5 +1,4 @@
 .features {
-  font-family: "OpenSans", "Arial", sans-serif;
   background-color: $white;
   position: relative;
   z-index: 9;
@@ -126,51 +125,43 @@
 }
 
 .features__wrapper {
-width: 100%;
-position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ width: 100%;
+ position: relative;
+ text-align: center;
 
-@media (min-width: $mobile-width) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+ @media (min-width: $mobile-width) {
   min-height: 1002px;
-  text-align: center;
-}
+ }
 
-@media (min-width: $tablet-width) {
-  display: flex;
-  flex-direction: column;
+ @media (min-width: $tablet-width) {
   justify-content: space-between;
   min-height: 725px;
-}
+ }
 
-@media (min-width: $desktop-width) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ @media (min-width: $desktop-width) {
   min-height: 950px;
-}
+ }
 }
 
 .features__description {
 
-&_wrapper {
+&--wrapper {
+display: flex;
+flex-direction: column;
+justify-content: center;
 background-color: $white;
 font-weight: 300;
 
   @media (min-width: $mobile-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-size: 24px;
     line-height: 29px;
     min-height: 210px;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-size: 40px;
     line-height: 54px;
@@ -178,17 +169,13 @@ font-weight: 300;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 50px;
     line-height: 68px;
     min-height: 320px;
   }
 }
 
-&_wrap {
+&--wrap {
 
   @media (min-width: $mobile-width) {
       display: flex;
@@ -199,36 +186,32 @@ font-weight: 300;
     }
   }
 
-&_item {
+&--item {
     margin: 0;
 }
 }
 
 .features__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 
   @media (min-width: $mobile-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
     min-height: 390px;
     margin-top: 5em;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     min-height: 380px;
-    text-align: center;
     padding-top: 2em;
     margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -236,7 +219,7 @@ font-weight: 300;
     padding-top: 0;
   }
 
-  &_wrapper {
+  &--wrapper {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -288,7 +271,7 @@ font-weight: 300;
     }
   }
 
-  &_wrap {
+  &--wrap {
 
   @media (min-width: $mobile-width) {
     min-height: 390px;
@@ -306,8 +289,6 @@ font-weight: 300;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     min-height: 205px;
     width: 80%;
@@ -316,7 +297,6 @@ font-weight: 300;
   }
 }
 }
-
 
 .features__item {
 
@@ -328,9 +308,6 @@ font-weight: 300;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     flex-basis: 25%;
     min-height: 195px;
     text-align: center;
@@ -358,9 +335,9 @@ font-weight: 300;
 }
 
 .features__content {
-font-size: 14px;
-line-height: 24px;
-margin: 0;
+ font-size: 14px;
+ line-height: 24px;
+ margin: 0;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;

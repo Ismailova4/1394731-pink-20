@@ -1,24 +1,21 @@
 .gallery {
-    font-family: "OpenSans", "Arial", sans-serif;
     font-size: 14px;
     background-color: $white;
 }
 
 .gallery__wrapper {
+  width: 100%;
 
   @media (min-width: $mobile-width) {
     min-height: 2485px;
-    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 2310px;
-    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 2055px;
-    width: 100%;
   }
 }
 
@@ -37,16 +34,13 @@
   }
 }
 
-.gallery__pic_wrapper {
-
-  @media (min-width: $mobile-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 1950px;
-    margin-top: 1.5em;
-  }
+.gallery__pic--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 1950px;
+  margin-top: 1.5em;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -63,6 +57,7 @@
     grid-column-gap: 2%;
     width: 80%;
     margin: 0 auto;
+    min-height: 1280px;
   }
 }
 
@@ -84,7 +79,7 @@
        font-size: 18px;
     }
 
-    &_wrapper {
+    &--wrapper {
 
       display: flex;
       flex-direction: column;
@@ -121,21 +116,20 @@
     width: 100%;
   }
 
-  &_panorama {
+  &--panorama {
      background-color: $light-bg;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
 
     @media (min-width: $mobile-width) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
       min-height: 190px;
       width: 90%;
+      margin: 0 auto;
     }
 
     @media (min-width: $tablet-width) {
       min-height: 120px;
-      width: 90%;
-      margin: 0 auto;
     }
 
     @media (min-width: $desktop-width) {
@@ -147,21 +141,86 @@
 
 .gallery__author {
 
-  &_wrap {
+  &--wrap {
     width: 90%;
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
      width: 85%;
-     margin: 0 auto;
-   }
+    }
   }
-  &_wrapper {
+
+  &--wrap-panorama {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: $mobile-width) {
+      min-height: 145px;
+    }
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      flex-wrap:  wrap;
+      min-height: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 95%;
+      min-height: 100px;
+    }
+  }
+
+  &--wrapper {
    display: flex;
    justify-content: flex-start;
    align-items: center;
   }
 }
+
+.gallery__like-counter--panorama {
+
+  font-size: 12px;
+  line-height: 24px;
+  color: $pink;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 1em;
+    order: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 13%;
+  }
+}
+
+.gallery__like-counter--panorama .like__svg-icon {
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-right: 0;
+  }
+}
+
+.gallery__like-counter--panorama .like__counter {
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin-right: 0;
+  }
+}
+
 
 .gallery__item {
   display: flex;
@@ -179,7 +238,7 @@
     width: 100%;
   }
 
-  &_panorama {
+  &--panorama {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,28 +281,23 @@
 }
 
 .gallery__like-counter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 12px;
   line-height: 24px;
   color: $pink;
   text-transform: uppercase;
-
-  @media (min-width: $mobile-width) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+  width: 90%;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
     width: 85%;
-    margin: 0 auto;
   }
 
-  .like__svg-icon {
-    margin-right: 20px;
+.like__svg-icon {
+  margin-right: 20px;
 
     @media (min-width: $tablet-width) {
       order: 2;
@@ -284,7 +338,7 @@
   }
 }
 
-.gallery__hint_svg-rect {
+.gallery__hint--svg-rect {
   position: absolute;
   z-index: 1;
 
@@ -307,7 +361,7 @@
 .gallery__image {
 
   @media (min-width: $tablet-width) {
-    /*width: 300px;*/width: 100%;
+    width: 300px;
     height: 300px;
   }
 
@@ -316,7 +370,7 @@
     height: 400px;
   }
 
-  &_panorama {
+  &--panorama {
     position: relative;
 
   @media (min-width: $tablet-width) {
