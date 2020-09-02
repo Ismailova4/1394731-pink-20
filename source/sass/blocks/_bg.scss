@@ -1,0 +1,101 @@
+.bg {
+  background-color: $dark;
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 240px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-back-mobile@2x.jpg");
+      }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 2%;
+    background-size: auto auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+        background-position: 50% 18%;
+        background-size: 1320px 880px;
+      }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 395px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 2%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+        background-size: 2400px auto;
+      }
+  }
+
+}
+
+.bg__slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: $white;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: $mobile-width) {
+      min-height: 145px;
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-height: 270px;
+      font-size: 50px;
+      line-height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 225px;
+    }
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $white;
+      font-weight: 300;
+      margin: 0 auto;
+      text-align: center;
+
+
+      @media (min-width: $mobile-width) {
+        width: 80%;
+        font-size: 24px;
+        line-height: 33px;
+        min-height: 185px;
+
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: 50px;
+        line-height: 68px;
+        min-height: 330px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70%;
+        min-height: 310px;
+      }
+    }
+}
