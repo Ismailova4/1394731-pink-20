@@ -1,0 +1,58 @@
+.contest__intro {
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+}
+
+.contest__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $mobile-width) {
+    min-height: 170px;
+    width: 90%;
+  }
+
+  @media (min-width: $tablet-width)  {
+    min-height: 255px;
+    width: 80%;
+  }
+
+  @media (min-width: $desktop-width)  {
+    min-height: 215px;
+    width: 60%;
+  }
+}
+
+.contest__intro:first-child {
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.contest__intro:last-child {
+  @media (min-width: $mobile-width) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
