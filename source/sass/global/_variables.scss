@@ -1,0 +1,67 @@
+$dark: #283645;
+$dark-blue: #1d2631;
+$light-blue: rgba(40, 54, 69, 0.3);
+$white: #ffffff;
+$black: #000000;
+$dark-font-color: #252527;
+$light-bg:#f2f2f2;
+$grey: #e5e5e5;
+$pink: #d22856;
+$green: #2aab6d;
+$bright-green: #1c9b5e;
+$light: rgba(46, 60, 75, 0.1);
+$light-color: rgba(255, 255, 255, 0.3);
+$light-border: rgba(255, 255, 255, 0.15);
+$header-color: rgba(0, 0, 0, 0.3);
+$shadow-color: rgba(0, 1, 1, 0.15);
+
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+@mixin list() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/opensanslight.woff2") format("woff2"),
+          url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    src:  url("../fonts/opensans.woff2") format("woff2"),
+          url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/opensansbold.woff2") format("woff2"),
+         url("../fonts/opensansbold.woff") format("woff");
+}
+
+.page-body {
+  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  color: $dark;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
