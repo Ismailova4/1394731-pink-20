@@ -1,0 +1,146 @@
+.gallery-list {
+  width: 100%;
+  @media (min-width: $mobile-width) {
+    min-height: 2300px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 2090px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 1815px;
+  }
+}
+
+.gallery-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 1950px;
+  margin-top: 1.5em;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+    min-height: 1400px;
+    margin: 3.5em auto 0;
+    width: 95%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 1280px;
+  }
+}
+
+.gallery-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.gallery-list__item-panorama {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gallery-list__hint {
+  position: absolute;
+  z-index: 2;
+  color: $white;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $mobile-width) {
+    top: 6px;
+    right: 12%;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 64px;
+    right: 6%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+    right: 11.5%;
+  }
+}
+
+.gallery-list__svg-bg {
+  position: absolute;
+  z-index: 1;
+
+  @media (min-width: $mobile-width) {
+    top: 0;
+    right: 6%;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 58px;
+    right: 3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 50px;
+    right: 10%;
+  }
+}
+
+.gallery-list__image {
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.gallery-list__image-panorama {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
+}
+
+.gallery-list__link {
+  text-decoration: none;
+}
+
+.gallery-list__item-panorama .gallery-list__link {
+  width: 100%;
+}

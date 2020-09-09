@@ -1,0 +1,38 @@
+.features-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $white;
+  font-weight: 300;
+
+  @media (min-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 29px;
+    min-height: 210px;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    font-size: 40px;
+    line-height: 54px;
+    min-height: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    min-height: 320px;
+  }
+}
+
+.features-description__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 140px;
+}
+
+.features-description__item {
+  margin: 0;
+}

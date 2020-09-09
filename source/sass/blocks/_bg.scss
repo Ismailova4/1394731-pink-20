@@ -44,58 +44,57 @@
 }
 
 .bg__slogan {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    color: $white;
-    font-weight: 300;
-    margin: 0;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: $white;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
 
-    @media (min-width: $mobile-width) {
-      min-height: 145px;
-      font-size: 24px;
-      line-height: 33px;
-    }
+  @media (min-width: $mobile-width) {
+    min-height: 145px;
+    font-size: 24px;
+    line-height: 33px;
+  }
 
-    @media (min-width: $tablet-width) {
-      min-height: 270px;
-      font-size: 50px;
-      line-height: 68px;
-    }
+  @media (min-width: $tablet-width) {
+    min-height: 270px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 
-    @media (min-width: $desktop-width) {
-      min-height: 225px;
-    }
-
-    &--form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: $white;
-      font-weight: 300;
-      margin: 0 auto;
-      text-align: center;
-
-
-      @media (min-width: $mobile-width) {
-        width: 80%;
-        font-size: 24px;
-        line-height: 33px;
-        min-height: 185px;
-
-      }
-
-      @media (min-width: $tablet-width) {
-        font-size: 50px;
-        line-height: 68px;
-        min-height: 330px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 70%;
-        min-height: 310px;
-      }
-    }
+  @media (min-width: $desktop-width) {
+    min-height: 225px;
+  }
 }
+
+.bg__slogan-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $mobile-width) {
+    width: 80%;
+    font-size: 24px;
+    line-height: 33px;
+    min-height: 185px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    min-height: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
+    min-height: 310px;
+  }
+}
+

@@ -45,7 +45,7 @@
   }
 }
 
-.modal-error__text--wrapper {
+.modal-error__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,7 +79,7 @@
   margin: 0;
 }
 
-.modal-error__button--wrapper {
+.modal-error__button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +161,7 @@
   }
 }
 
-.modal-success__text--wrapper {
+.modal-success__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,7 +196,7 @@
   margin: 0;
 }
 
-.modal-success__button--wrapper {
+.modal-success__button {
   display: flex;
   flex-direction: column;
   justify-content: center;

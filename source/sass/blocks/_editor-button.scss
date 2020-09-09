@@ -1,0 +1,112 @@
+.editor-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $mobile-width) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    min-height: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 55px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.editor-button__post,
+.editor-button__cancel {
+  display: block;
+  width: 280px;
+  height: 55px;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.editor-button__post {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  cursor: pointer;
+  color: $pink;
+  border: 3px solid $pink;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  @media (min-width: $mobile-width) {
+    padding: 16px 90px 16px 91px;
+    margin-bottom: 0.5em;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 258px;
+    padding: 15px 80px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    height: 55px;
+    padding: 15px 42px;
+  }
+}
+
+.editor-button__cancel {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  cursor: pointer;
+  color: $light;
+  border: 3px solid $light;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  @media (min-width: $mobile-width) {
+    padding: 16px 103px 16px 104px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 258px;
+    padding: 15px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    height: 55px;
+    padding: 15px 55px;
+  }
+}
+
+.editor-button__post:active,
+.editor-button__cancel:active {
+  outline: none;
+}
+
+.editor-button__post:hover {
+  color: $white;
+  background-color: $pink;
+}
+
+.editor-button__post:active {
+  color: transparentize($white, 0.7);
+  background-color: $pink;
+}
+
+.editor-button__cancel:hover {
+  color: transparentize($dark, 0.7);
+  border-color: transparentize($dark, 0.7);
+}
+
+.editor-button__cancel:active {
+  color: transparentize($white, 0.7);
+  background-color: transparentize($dark, 0.7);
+}

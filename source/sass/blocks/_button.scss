@@ -1,0 +1,57 @@
+.button {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+  border: 2px solid $green;
+  border-radius: 0.1em;
+  background-color: $green;
+  cursor: pointer;
+
+  @media (min-width: $mobile-width) {
+    width: 276px;
+    height: 59px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    height: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 296px;
+    height: 59px;
+  }
+}
+
+.button:hover {
+  color: $white;
+  border: 2px solid $bright-green;
+  border-radius: 0.1em;
+  background-color: $bright-green;
+}
+
+.button:active {
+  color: $light-color;
+  outline: none;
+  border: 2px solid $bright-green;
+  border-radius: 0.1em;
+  background-color: $bright-green;
+}
+
+.button:disabled {
+  color: $white;
+  outline: none;
+  border: 2px solid $grey;
+  border-radius: 0.1em;
+  background-color: $grey;
+}
+
+.button:hover {
+  outline-offset: none;
+}
+
+.button:active {
+  outline-offset: none;
+}
+

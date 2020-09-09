@@ -1,0 +1,49 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $light-bg;
+
+  @media (min-width: $mobile-width) {
+    min-height: 120px;
+    width: 90%;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+    width: 100%;
+  }
+}
+
+.text__wrap {
+  width: 90%;
+  margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 85%;
+    }
+}
+
+.text__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text__content {
+  line-height: 24px;
+  margin: 0;
+}
+
+.text__name {
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0 5px 0 0;
+}
+
+.text__update {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

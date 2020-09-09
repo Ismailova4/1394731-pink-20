@@ -1,0 +1,66 @@
+.map {
+  background-color: $white;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+
+.map::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  border: 2px solid $grey;
+  width: 2em;
+  height: 2em;
+  border: 1px solid $white;
+  border-radius: 50%;
+  background-color: $white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23d22856'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  @media (min-width: $mobile-width) {
+    top: 30%;
+    left: 45%;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 38.5%;
+    left: 46.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 2.2em;
+    height: 2.2em;
+    top: 41.5%;
+    left: 48.5%;
+  }
+}
+
+.map__interactive {
+  width: 100%;
+  border: none;
+
+    @media (min-width: $mobile-width) {
+      min-height: 200px;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-height: 374px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 502px;
+    }
+}

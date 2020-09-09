@@ -1,0 +1,20 @@
+.footer-index__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $mobile-width) {
+    min-height: 410px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 380px;
+  }
+}

@@ -1,0 +1,49 @@
+.footer-logo__svg-mobile  {
+
+  @media (min-width: $mobile-width) {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.footer-logo__svg-desktop {
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.footer-logo__svg-pink {
+  fill: $dark;
+}
+
+.footer-logo__svg-glasses {
+  fill: $pink;
+}
+
+.footer-logo__svg-pink:hover {
+  fill: $pink;
+}
+
+.footer-logo__svg-pink:active {
+  fill: transparentize($pink, 0.3);
+}
+
+.footer-logo__svg-glasses:active {
+  fill: transparentize($pink, 0.3);
+}

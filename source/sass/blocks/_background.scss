@@ -1,0 +1,19 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  background: $white;
+}
+
+.background:hover {
+  border: 3px solid $dark;
+}
+
+.background:active {
+  opacity: 0.3;
+  border: 3px solid transparentize($dark, 0.7);
+}

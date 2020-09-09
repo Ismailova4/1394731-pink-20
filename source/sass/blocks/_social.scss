@@ -1,0 +1,25 @@
+.social {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+  cursor: pointer;
+}

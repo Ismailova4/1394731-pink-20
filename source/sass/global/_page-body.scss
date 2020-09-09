@@ -1,0 +1,8 @@
+.page-body {
+  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 0;
+  color: $dark;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}

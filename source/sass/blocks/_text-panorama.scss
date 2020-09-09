@@ -1,0 +1,68 @@
+.text-panorama {
+  background-color: $light-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+    @media (min-width: $mobile-width) {
+      min-height: 190px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-height: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 100px;
+      width: 80%;
+    }
+}
+
+.text-panorama__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: $mobile-width) {
+      min-height: 145px;
+    }
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      flex-wrap:  wrap;
+      min-height: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 95%;
+      min-height: 100px;
+    }
+}
+
+.text-panorama__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text-panorama__name {
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0 5px 0 0;
+}
+
+.text-panorama__update {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.text-panorama__content {
+  line-height: 24px;
+  margin: 0;
+}
