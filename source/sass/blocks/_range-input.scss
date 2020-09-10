@@ -18,17 +18,15 @@
 .range-input__first,
 .range-input__second,
 .range-input__third {
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
+    padding-top: 0.8em;
+    height: 60px;
   }
 }
 
@@ -69,7 +67,7 @@
 }
 
 .range-input__slider::-webkit-slider-runnable-track {
-  height: 0.12em;
+  height: 2px;
   cursor: pointer;
   background: $dark;
 }

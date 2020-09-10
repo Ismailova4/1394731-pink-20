@@ -169,3 +169,8 @@
   border-radius: 0.1em;
   background-color: $white;
 }
+
+input::-moz-placeholder {
+  color: $dark;
+  padding-left: 1.2em;
+}
