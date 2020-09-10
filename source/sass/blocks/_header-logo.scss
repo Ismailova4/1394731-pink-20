@@ -4,17 +4,18 @@
 
   @media (min-width: $mobile-width) {
     width: 87%;
-    min-height: 70px;
+    min-height: 66px;
   }
 
   @media (min-width: $tablet-width) {
+    width: 93%;
+    margin-bottom: 0.4em;
     min-height: 110px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 110px;
     width: 43%;
-    padding-left: 2em;
   }
 }
 
@@ -26,7 +27,7 @@
   text-decoration: none;
 
   @media (min-width: $mobile-width) {
-    min-height: 70px;
+    min-height: 66px;
   }
 
   @media (min-width: $tablet-width) {
@@ -40,6 +41,10 @@
 }
 
 .header-logo__svg {
+  @media (min-width: $mobile-width) {
+    padding-top: 5px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 145px;
     height: 40px;

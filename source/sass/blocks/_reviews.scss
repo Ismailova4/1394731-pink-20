@@ -16,7 +16,7 @@
       }
 
       @media (min-width: $tablet-width) {
-        width: 90%;
+        width: 95%;
         min-height: 280px;
       }
 
@@ -47,6 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 165px;
+    margin-bottom: 2em;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,18 +62,19 @@
   font-size: 14px;
   margin: 0;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: 659px) {
     order: 1;
     margin-top: 1em;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 2em;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    margin-bottom: 0;
   }
 }
 
@@ -87,7 +89,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    font-size: 20px;
+    margin-top: 2em;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,11 +118,11 @@
 
   @media (min-width: $mobile-width) {
     width: 4em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.9em;
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 1em;
   }
 
 }
@@ -146,8 +149,7 @@
   flex-grow: 0;
   border: 1px solid $grey;
   border-radius: 50%;
-  background-color: $dark;
-  opacity: 0.3;
+  background-color: transparentize($dark, 0.7);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -160,7 +162,6 @@
 }
 
 .reviews__toggle:checked + label::before {
-  opacity: 1;
   border: 3px solid $dark;
   background-color: $white;
 }

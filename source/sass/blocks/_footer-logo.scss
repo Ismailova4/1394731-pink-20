@@ -1,3 +1,13 @@
+.footer-logo {
+  @media (min-width: $mobile-width) {
+    margin-top: 0.5em;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
 .footer-logo__svg-mobile  {
 
   @media (min-width: $mobile-width) {

@@ -34,7 +34,7 @@
   align-items: center;
 
   @media (min-width: $mobile-width) {
-    min-height: 370px;
+    min-height: 340px;
   }
 
   @media (min-width: $tablet-width) {
@@ -64,6 +64,14 @@
     align-items: center;
     width: 100%;
   }
+}
+
+.form__item:nth-child(2n+2) {
+  margin-top: 1em;
+}
+
+.form__item:last-child {
+  margin-top: 1em;
 }
 
 .form__text {
@@ -114,7 +122,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    //width: 521px;
     flex-basis: 80%;
     height: 59px;
   }
@@ -128,14 +135,13 @@
 .name-input {
 
   @media (min-width: $tablet-width) {
-      //width: 561px;
-      flex-basis: 87%;
-      height: 59px;
+    flex-basis: 87%;
+    height: 59px;
   }
 
   @media (min-width: $desktop-width) {
-      width: 376px;
-      height: 59px;
+    width: 376px;
+    height: 59px;
   }
 }
 
