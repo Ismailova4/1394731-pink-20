@@ -14,7 +14,7 @@
     background-position: 0% 39%, 0% 0%;
     background-repeat: no-repeat, no-repeat;
     background-size:  auto auto,
-                      auto 462px;
+                      100% 462px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-hand-mobile@2x.png"),
@@ -22,7 +22,7 @@
         background-position: 0% 39%, 0% 0%;
         background-repeat: no-repeat, no-repeat;
         background-size:  260px 290px,
-                          auto 462px;
+                          100% 462px;
       }
   }
 

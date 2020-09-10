@@ -200,6 +200,12 @@
     color: $white;
     text-decoration: none;
     cursor: pointer;
+    width: auto;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 19px;
+      padding-top: 19px;
+    }
 
     &:hover {
       color: $pink;
@@ -234,15 +240,13 @@
 }
 
 .main-nav-nojs .main-nav__item {
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .main-nav__item {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
-  position: relative;
 
   @media (min-width: $mobile-width) {
     padding-top: 20px;
@@ -252,15 +256,22 @@
   }
 
     @media (min-width: $desktop-width) {
-    flex-basis: 20%;
     border: none;
     text-align: center;
   }
 }
 
-.main-nav__item--active {
+.main-nav__item--active:after {
 
-    @media (min-width: $desktop-width) {
-      border-bottom: 2px solid $white;
-    }
+  @media (min-width: $desktop-width) {
+    content: '';
+    top: auto;
+    right: 0;
+    bottom: -2px;
+    display: block;
+    height: 2px;
+    background-color: $white;
+    border: 0;
+    transform: none;
   }
+}

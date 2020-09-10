@@ -73,6 +73,11 @@
   justify-content: space-between;
   align-items: flex-start;
   min-height: 90px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 40%;
+  }
 }
 
 .form-contacts__item .highlight {
@@ -99,19 +104,19 @@
   box-sizing: border-box;
   padding-left: 1.2em;
   outline: none;
+  width: 100%;
 
   @media (min-width: $mobile-width) {
-    width: 276px;
     height: 59px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 521px;
+    //width: 521px;
     height: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 336px;
+    //width: 336px;
     height: 59px;
   }
 }
@@ -126,13 +131,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 1460px;
-    right: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 1053px;
-    left: 499px;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -146,13 +146,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 1589px;
-    right: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 1053px;
-    right: 190px;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -166,15 +161,9 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 1478px;
-    right: 95px;
+    top: 20px;
+    right: 20px;
   }
-
-  @media (min-width: $desktop-width) {
-    top: 1073px;
-    left: 520px;
-  }
-
 }
 
 .form-contacts__svg-icon-mail {
@@ -187,13 +176,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    top: 1610px;
-    right: 95px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 1075px;
-    right: 210px;
+    top: 23px;
+    right: 20px;
   }
 }
 
