@@ -30,6 +30,16 @@
   }
 }
 
+.range-input__first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
 .range-input__second,
 .range-input__third {
 

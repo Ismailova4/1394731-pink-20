@@ -143,13 +143,18 @@
 
 .editor-tool__wrapper::after {
 
-  @media (max-width: $mobile-width) {
+  @media (min-width: $mobile-width) {
+    display: block;
     content: '';
     position: absolute;
     border: 1px solid $light;
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+
+  @media (min-width: $tablet-width){
+    display: none;
   }
 }
 
