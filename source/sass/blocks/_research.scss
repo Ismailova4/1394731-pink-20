@@ -45,7 +45,7 @@
 .research__wrapper {
   position: relative;
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +54,7 @@
     margin: 0 auto;
   }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-height: 400px;
     width: 80%;
   }

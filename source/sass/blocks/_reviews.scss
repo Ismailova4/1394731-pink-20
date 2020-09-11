@@ -1,4 +1,4 @@
-.reviews  {
+.reviews {
   line-height: 30px;
 }
 
@@ -10,20 +10,20 @@
   text-align: center;
   margin: 0 auto;
 
-      @media (min-width: $mobile-width) {
-        min-height: 344px;
-        width: 90%;
-      }
+  @media (min-width: $mobile-width) {
+    min-height: 344px;
+    width: 90%;
+  }
 
-      @media (min-width: $tablet-width) {
-        width: 95%;
-        min-height: 280px;
-      }
+  @media (min-width: $tablet-width) {
+    width: 95%;
+    min-height: 280px;
+  }
 
-      @media (min-width: $desktop-width) {
-        width: 80%;
-        min-height: 410px;
-      }
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    min-height: 410px;
+  }
 }
 
 .reviews__item {
@@ -99,7 +99,6 @@
 }
 
 .reviews__legend {
-
   @media (min-width: $mobile-width) {
     display: none;
   }
@@ -107,7 +106,6 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
-
 }
 
 .reviews__toggles {
@@ -124,7 +122,6 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 1em;
   }
-
 }
 
 .reviews__button {
@@ -136,24 +133,27 @@
   position: absolute;
   z-index: -1;
   opacity: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .reviews__toggle + label::before {
-
   @media (min-width: $mobile-width) {
-  content:'';
-  display: block;
-  width: 6px;
-  height: 6px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 1px solid $grey;
-  border-radius: 50%;
-  background-color: transparentize($dark, 0.7);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 6'%3e%3ccircle r='3' opacity='0.3' fill='%23283645'/%3e%3c/svg%3e");
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid $grey;
+    border-radius: 50%;
+    background-color: transparentize($dark, 0.7);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 6'%3e%3ccircle r='3' opacity='0.3' fill='%23283645'/%3e%3c/svg%3e");
   }
 
   @media (min-width: $desktop-width) {
@@ -188,35 +188,26 @@
   background-color: $white;
 }
 
-
-.reviews__toggle {
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .reviews__svg-icon {
-
   &--blockquote {
+    @media (min-width: $mobile-width) {
+      display: none;
+    }
 
-  @media (min-width: $mobile-width) {
-    display: none;
-  }
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    margin-bottom: 3em;
-    margin-top: 3em;
-  }
+    @media (min-width: $desktop-width) {
+      display: block;
+      margin-bottom: 3em;
+      margin-top: 3em;
+    }
   }
 
   &--left,
   &--right {
+    fill: transparentize($dark, 0.7);
 
     @media (min-width: $mobile-width) {
       display: none;
@@ -232,11 +223,6 @@
       cursor: pointer;
     }
   }
-}
-
-.reviews__svg-icon--left,
-.reviews__svg-icon--right {
-  fill: transparentize($dark, 0.7);
 }
 
 .reviews__svg-icon--left:hover,

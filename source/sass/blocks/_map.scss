@@ -15,14 +15,13 @@
 }
 
 .map::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   z-index: 2;
   border: 2px solid $grey;
   width: 2em;
   height: 2em;
-  border: 1px solid $white;
   border-radius: 50%;
   background-color: $white;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23d22856'/%3e%3c/svg%3e");
@@ -52,15 +51,15 @@
   width: 100%;
   border: none;
 
-    @media (min-width: $mobile-width) {
-      min-height: 200px;
-    }
+  @media (min-width: $mobile-width) {
+    min-height: 200px;
+  }
 
-    @media (min-width: $tablet-width) {
-      min-height: 374px;
-    }
+  @media (min-width: $tablet-width) {
+    min-height: 374px;
+  }
 
-    @media (min-width: $desktop-width) {
-      min-height: 502px;
-    }
+  @media (min-width: $desktop-width) {
+    min-height: 502px;
+  }
 }

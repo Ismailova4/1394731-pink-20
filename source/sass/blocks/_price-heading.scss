@@ -118,16 +118,14 @@
 .price-heading__item:first-child,
 .price-heading__item:nth-child(2n+2),
 .price-heading__item:last-child {
-
-  @media(max-width: 659px)	{
+  @media (max-width: 659px) {
     display: none;
   }
 }
 
-.price-heading__item-type:before {
-
+.price-heading__item-type::before {
   @media (max-width: 659px) {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     height: 103px;
@@ -137,10 +135,9 @@
   }
 }
 
-.price-heading__item-type:after {
-
+.price-heading__item-type::after {
   @media (max-width: 659px) {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     height: 103px;
@@ -150,10 +147,9 @@
   }
 }
 
-.price-heading__amount:before {
-
+.price-heading__amount::before {
   @media (max-width: 659px) {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     height: 178px;
@@ -163,10 +159,9 @@
   }
 }
 
-.price-heading__amount:after {
-
+.price-heading__amount::after {
   @media (max-width: 659px) {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     height: 180px;
@@ -175,4 +170,3 @@
     background-color: $grey;
   }
 }
-

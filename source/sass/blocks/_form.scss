@@ -75,7 +75,6 @@
 }
 
 .form__text {
-
   @media (min-width: $mobile-width) {
     margin-left: 1.2em;
   }
@@ -88,6 +87,7 @@
 
 .input-tel,
 .input-email {
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -133,7 +133,6 @@
 }
 
 .name-input {
-
   @media (min-width: $tablet-width) {
     flex-basis: 87%;
     height: 59px;
@@ -142,19 +141,6 @@
   @media (min-width: $desktop-width) {
     width: 376px;
     height: 59px;
-  }
-}
-
-.input-tel,
-.input-email {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    width: 496px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 372px;
   }
 }
 

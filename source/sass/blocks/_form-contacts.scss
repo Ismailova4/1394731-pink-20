@@ -1,5 +1,4 @@
 .form-contacts {
-
   @media (min-width: $mobile-width) {
     border: none;
     margin: 0;
@@ -23,7 +22,6 @@
 }
 
 .form-contacts__heading {
-
   @media (min-width: $mobile-width) {
     display: none;
   }
@@ -81,7 +79,6 @@
 }
 
 .form-contacts__item .highlight {
-
   @media (min-width: $mobile-width) {
     margin-left: 1.2em;
   }
@@ -111,12 +108,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    //width: 521px;
     height: 59px;
   }
 
   @media (min-width: $desktop-width) {
-    //width: 336px;
     height: 59px;
   }
 }

@@ -1,5 +1,4 @@
 .range-input {
-
   @media (min-width: $mobile-width) {
     width: 85%;
     margin: 0 auto;
@@ -42,7 +41,6 @@
 
 .range-input__second,
 .range-input__third {
-
   @media (min-width: $mobile-width) {
     display: none;
   }
@@ -57,19 +55,20 @@
 }
 
 .range-input__slider {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 18px 0;
 
   @media (min-width: $mobile-width) {
-    width: 240px; }
+    width: 240px;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 202px; }
+    width: 202px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 288px;
   }
-
 }
 
 .range-input__slider:focus {
@@ -89,7 +88,7 @@
   border-radius: 50%;
   background: $white;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   margin-top: -6px;
 }
 
@@ -100,7 +99,7 @@
   border-radius: 50%;
   background: $pink;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   margin-top: -6px;
 }
 
@@ -121,7 +120,7 @@
   border-radius: 50%;
   background: $white;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   margin-top: -6px;
 }
 
@@ -132,6 +131,6 @@
   border-radius: 50%;
   background: $pink;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   margin-top: -6px;
 }

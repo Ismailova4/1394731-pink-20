@@ -4,45 +4,45 @@
   flex-direction: column;
   justify-content: space-around;
 
-    @media (min-width: $mobile-width) {
-      min-height: 190px;
-      width: 90%;
-      margin: 0 auto;
-      padding-bottom: 0.9em;
-    }
+  @media (min-width: $mobile-width) {
+    min-height: 190px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0.9em;
+  }
 
-    @media (min-width: $tablet-width) {
-      min-height: 120px;
-      padding-bottom: 0;
-    }
+  @media (min-width: $tablet-width) {
+    min-height: 120px;
+    padding-bottom: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-      min-height: 100px;
-      width: 80%;
-    }
+  @media (min-width: $desktop-width) {
+    min-height: 100px;
+    width: 80%;
+  }
 }
 
 .text-panorama__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 
-    @media (min-width: $mobile-width) {
-      min-height: 145px;
-    }
+  @media (min-width: $mobile-width) {
+    min-height: 145px;
+  }
 
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-      flex-wrap:  wrap;
-      min-height: 100px;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 95%;
-      min-height: 100px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 95%;
+    min-height: 100px;
+  }
 }
 
 .text-panorama__wrapper {

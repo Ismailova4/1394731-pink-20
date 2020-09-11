@@ -9,7 +9,6 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
-
 }
 
 .contest__wrapper {
@@ -25,19 +24,18 @@
     width: 90%;
   }
 
-  @media (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     min-height: 255px;
     width: 80%;
   }
 
-  @media (min-width: $desktop-width)  {
+  @media (min-width: $desktop-width) {
     min-height: 215px;
     width: 60%;
   }
 }
 
 .contest__intro:first-child {
-
   @media (min-width: $mobile-width) {
     display: none;
   }

@@ -13,8 +13,7 @@
   }
 }
 
-.footer-logo__svg-mobile  {
-
+.footer-logo__svg-mobile {
   @media (min-width: $mobile-width) {
     display: block;
   }
@@ -29,7 +28,6 @@
 }
 
 .footer-logo__svg-desktop {
-
   @media (min-width: $mobile-width) {
     display: none;
   }

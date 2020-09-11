@@ -31,7 +31,6 @@
 }
 
 .like-counter-panorama__amount {
-
   @media (min-width: $tablet-width) {
     order: 0;
     margin-right: 0;
@@ -53,19 +52,18 @@
     justify-content: space-between;
     width: 85%;
   }
+}
 
 .like-counter__svg-icon {
   margin-right: 20px;
 
-    @media (min-width: $tablet-width) {
-      order: 2;
-      margin-right: 0;
-    }
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-right: 0;
   }
 }
 
 .like-counter__amount {
-
   @media (min-width: $tablet-width) {
     order: 1;
   }

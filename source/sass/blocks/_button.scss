@@ -27,12 +27,14 @@
 
 .button:hover {
   color: $white;
+  outline-offset: none;
   border: 2px solid $bright-green;
   border-radius: 0.1em;
   background-color: $bright-green;
 }
 
 .button:active {
+  outline-offset: none;
   color: $light-color;
   outline: none;
   border: 2px solid $bright-green;
@@ -47,12 +49,3 @@
   border-radius: 0.1em;
   background-color: $grey;
 }
-
-.button:hover {
-  outline-offset: none;
-}
-
-.button:active {
-  outline-offset: none;
-}
-

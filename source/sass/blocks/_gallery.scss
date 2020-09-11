@@ -1,6 +1,6 @@
 .gallery {
-    font-size: 14px;
-    background-color: $white;
+  font-size: 14px;
+  background-color: $white;
 }
 
 .gallery__wrapper {
@@ -47,17 +47,14 @@
   text-align: center;
   margin: 0;
 
-    @media (min-width: $mobile-width) {
-      font-size: 14px;
-      width: 80%;
-    }
+  @media (min-width: $mobile-width) {
+    font-size: 14px;
+    width: 80%;
+  }
 
-    @media (min-width: $tablet-width) {
-      font-size: 18px;
-    }
-}
-
-.gallery__heading {
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 
   @media (min-width: $tablet-width) {
     br {
@@ -71,4 +68,3 @@
     }
   }
 }
-
