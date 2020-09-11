@@ -2,6 +2,7 @@ var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var pageHeader = document.querySelector('.header__wrapper');
 
+pageHeader.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
 //navMain.classList.remove('main-nav-nojs');
 
 navToggle.addEventListener('click', function() {

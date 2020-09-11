@@ -5,8 +5,12 @@
   width: 100%;
   background-color: $dark;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: -6.3em;
+  }
   @media (min-width: $desktop-width) {
     background-color: $header-color;
+    margin-bottom: -7.2em;
   }
 }
 
