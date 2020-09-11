@@ -50,6 +50,7 @@
 .map__interactive {
   width: 100%;
   border: none;
+  z-index: 2;
 
   @media (min-width: $mobile-width) {
     min-height: 200px;
