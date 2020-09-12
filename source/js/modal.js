@@ -13,9 +13,9 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("surname-input");
-  storage = localStorage.getItem("name-input");
-  storage = localStorage.getItem("input-email");
+  storage = localStorage.getItem('surname-input');
+  storage = localStorage.getItem('name-input');
+  storage = localStorage.getItem('input-email');
 } catch(err)  {
   isStorageSupport = false;
 }
@@ -45,9 +45,9 @@ if ( surname.value == 0 || name.value == 0 || mailAddress.value == 0 ) {
   modalSuccess.classList.add('modal-success-show');
 
   if (isStorageSupport) {
-    localStorage.setItem("surname-input", surname.value);
-    localStorage.setItem("name-input", name.value);
-    localStorage.setItem("input-email", mailAddress.value);
+    localStorage.setItem('surname-input', surname.value);
+    localStorage.setItem('name-input', name.value);
+    localStorage.setItem('input-email', mailAddress.value);
   }
 }
 
