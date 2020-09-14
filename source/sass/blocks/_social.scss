@@ -9,14 +9,12 @@
     display: flex;
     justify-content: space-between;
     width: 27%;
-    margin-bottom: 1.5em;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 15%;
-    margin-bottom: 0;
   }
 }
 

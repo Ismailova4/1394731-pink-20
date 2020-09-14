@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 400px;
     background-color: $light-bg;
   }
 }
@@ -95,6 +96,10 @@
 .research__wrap {
   margin-bottom: 1em;
   margin-right: 2em;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6em;
+  }
 }
 
 .research__svg-icon--timer {
@@ -142,10 +147,4 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-}
-
-.research__wrap {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 6em;
-  }
 }
