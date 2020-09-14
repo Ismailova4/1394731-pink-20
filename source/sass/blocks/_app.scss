@@ -43,7 +43,7 @@
   @media (min-width: $mobile-width) {
     min-height: 190px;
     width: 90%;
-    top: 4em;
+    padding-top: 4em;
   }
 
   @media (min-width: $tablet-width) {
@@ -51,6 +51,7 @@
     justify-content: space-evenly;
     min-height: 300px;
     width: 80%;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {

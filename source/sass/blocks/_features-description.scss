@@ -33,6 +33,10 @@
     align-items: center;
     min-height: 145px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0.4em;
+  }
 }
 
 .features-description__item {

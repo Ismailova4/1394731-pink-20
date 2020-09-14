@@ -24,18 +24,18 @@
 
 .trip-review__heading {
   @media (min-width: $mobile-width) {
-    margin-bottom: 1em;
+    margin: 1em auto;
     text-align: center;
   }
 
   @media (min-width: $tablet-width) {
     width: 40%;
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 27%;
-    margin-bottom: 0;
+    //margin-bottom: 0;
   }
 }
 
@@ -139,18 +139,6 @@
     flex-direction: row;
     min-height: 70px;
   }
-}
-
-::-webkit-input-placeholder {
-  color: $dark;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-::-moz-placeholder {
-  color: $dark;
-  font-size: 18px;
-  line-height: 30px;
 }
 
 .trip-review__info {

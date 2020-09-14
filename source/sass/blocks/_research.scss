@@ -26,6 +26,18 @@
   @media (min-width: $desktop-width) {
     line-height: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .research__link {
@@ -50,7 +62,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 400px;
-    width: 90%;
+    width: 92%;
     margin: 0 auto;
   }
 
@@ -70,7 +82,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 213px;
+    min-height: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +90,11 @@
     min-height: 210px;
     margin-bottom: 3em;
   }
+}
+
+.research__wrap {
+  margin-bottom: 1em;
+  margin-right: 2em;
 }
 
 .research__svg-icon--timer {
@@ -93,7 +110,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    top: 115px;
+    top: 108px;
     left: 18px;
   }
 
@@ -122,6 +139,8 @@
 }
 
 .research__content {
+  font-size: 14px;
+  line-height: 24px;
   margin: 0;
 }
 

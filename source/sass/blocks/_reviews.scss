@@ -11,7 +11,7 @@
   margin: 0 auto;
 
   @media (min-width: $mobile-width) {
-    min-height: 344px;
+    min-height: 320px;
     width: 90%;
   }
 
@@ -47,7 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 165px;
-    margin-bottom: 2em;
+    margin-top: 1em;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,7 +64,7 @@
 
   @media (max-width: 659px) {
     order: 1;
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
 
   @media (min-width: $tablet-width) {
@@ -116,11 +116,6 @@
 
   @media (min-width: $mobile-width) {
     width: 4em;
-    padding-bottom: 1.9em;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 1em;
   }
 }
 

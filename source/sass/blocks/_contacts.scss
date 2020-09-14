@@ -6,6 +6,10 @@
     min-height: 330px;
   }
 
+  @media (min-width: $tablet-width) {
+    min-height: 340px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -104,6 +108,16 @@
     flex-direction: column;
     justify-content: flex-start;
     min-height: 100px;
+  }
+}
+
+.contacts__item:first-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 5em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 

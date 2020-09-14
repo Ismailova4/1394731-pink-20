@@ -6,11 +6,11 @@
   position: relative;
 
   @media (max-width: 659px) {
-    height: 100px;
+    height: 6.06em;
   }
 
   @media (min-width: $tablet-width) {
-    height: 5.5em;
+    height: 5em;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +26,7 @@
   @media (max-width: $mobile-width) {
     width: 320px;
     text-align: center;
+    padding-bottom: 1.3em;
   }
 }
 
