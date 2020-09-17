@@ -25,7 +25,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "styles": "gulp styles",
-    "start": "gulp"
+    "start": "gulp start"
   },
   "browserslist": [
     "last 2 versions",

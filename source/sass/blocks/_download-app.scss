@@ -149,12 +149,14 @@
   margin: 0;
 
   @media (min-width: $mobile-width) {
+    visibility: hidden;
     margin-bottom: 1em;
     font-size: 24px;
     line-height: 120%;
   }
 
   @media (min-width: $tablet-width) {
+    visibility: visible;
     font-size: 40px;
     max-width: 185px;
     margin-bottom: 0;
